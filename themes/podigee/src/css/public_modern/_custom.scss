@@ -1,0 +1,138 @@
+ul li {
+  position: relative;
+}
+
+.navbar-brand.logo {
+  padding-top: 8px;
+
+  img {
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    width: 110px;
+  }
+
+  span {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+  }
+}
+
+.home-wrapper {
+  padding: 150px 0 100px;
+
+  .explanation {
+    width: 75%
+  }
+}
+
+.bg-img-1 {
+  background: image-url('public_modern/background_images/microphone1.jpg') center;
+  background-size: cover;
+  position: relative;
+}
+
+.home.section-small .home-wrapper {
+  padding: 0;
+}
+
+.section.section-small {
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
+
+.section:nth-child(even) {
+  background-color: #fafafa;
+  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+}
+
+.service-item .service-detail {
+  font-size: 18px;
+
+  h4 {
+    font-size: 22px;
+  }
+}
+
+.podcast-cover {
+  border-radius: 3px;
+}
+
+.testimonial {
+  .quote p {
+    display: inline;
+  }
+
+  .customer {
+    & > a,
+    & > .name {
+      display: inline-block;
+    }
+
+    .name {
+      position: relative;
+      text-align: left;
+      top: 12px;
+    }
+
+    .name a {
+      display: block;
+    }
+  }
+}
+
+#pricing {
+  .free-placeholder {
+    height: 44px;
+  }
+
+  .popular-plan {
+    background: #00b19d;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    padding: 15px 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .sign-up {
+    margin-top: 40px;
+  }
+
+  .enterprise-contact {
+    .inner-box {
+      padding-bottom: 20px;
+      max-width: 100%;
+    }
+
+    .plan-header {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    .plan-price {
+      font-size: 30px;
+    }
+  }
+}
+
+#features {
+  font-size: 18px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.blog-detail-box {
+  img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
