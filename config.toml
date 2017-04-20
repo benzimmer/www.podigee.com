@@ -1,0 +1,10 @@
+baseURL = "https://www.podigee.com/"
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+theme = "podigee"
+
+[Languages]
+[Languages.en]
+title = "Podigee Podcast Hosting"
+
+[Languages.de]
