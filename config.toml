@@ -19,6 +19,7 @@ theme = "podigee"
   ]
   register_link = "https://app.podigee.com/register"
   login_link = "https://app.podigee.com/"
+  analytics_key = "gBLJbe7dK7pkedcxKH2WM0yilNDxCZPN"
 
 [Languages]
 [Languages.en]

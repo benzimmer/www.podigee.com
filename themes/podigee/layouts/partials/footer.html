@@ -1,0 +1,66 @@
+{{ $brand := (index .Site.Data.brands .Params.brand) }}
+<footer class='section footer footer-sm'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-12'>
+        <div class='text-center'>
+          <a class='navbar-brand logo' href='{{ $brand.homelink | relLangURL }}'>
+            <img alt="Podigee - The Podcast Publishing Platform" class="podigee-logo" src="https://static.podigee.com/assets/podigee-logo-black-trans-70-329f9e9ccd24ad051b325b7e9b2bb982dc8db4ba2b6c75235c4f590ddef636d2.png" />
+            <span class='text-colored'>
+              {{ $brand.name }}
+            </span>
+          </a>
+          <ul class='list-inline social-circle'>
+            <li>
+              <a href='https://www.facebook.com/podigee'>
+                <i class='zmdi zmdi-facebook'></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://www.twitter.com/podigee'>
+                <i class='zmdi zmdi-twitter'></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://plus.google.com/+Podigee'>
+                <i class='zmdi zmdi-google-plus'></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://github.com/podigee'>
+                <i class='zmdi zmdi-github'></i>
+              </a>
+            </li>
+          </ul>
+          <ul class='list-inline menu-list m-t-30'>
+            <li>
+              <a href='mailto:hello@podigee.com'>Help &amp; Support</a>
+            </li>
+            <li>
+              <a href='{{ .RelRef (printf "about/tos.%s.md" .Lang) }}'>Terms &amp; Conditions</a>
+            </li>
+            <li>
+              <a href='{{ .RelRef (printf "about/privacy.%s.md" .Lang) }}'>Privacy Policy</a>
+            </li>
+            <li>
+              <a href='{{ .RelRef (printf "about/imprint.%s.md" .Lang) }}'>Imprint</a>
+            </li>
+          </ul>
+          <p class='text-muted m-b-0'>© Podigee 2013-{{ now.Year }} All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<a class='back-to-top' href='#'>
+  <i class='zmdi zmdi-chevron-up'></i>
+</a>
+
+<script>
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+}}();
+</script>
+<script>
+analytics.load("{{ .Site.Params.analytics_key }}")
+analytics.page("{{ .Title }}")
+</script>
