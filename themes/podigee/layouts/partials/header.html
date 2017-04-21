@@ -1,1 +1,57 @@
-{{ i18n "home" }}
+{{ $brand := (index .Site.Data.brands .Params.brand) }}
+<div class='navbar navbar-custom' role='navigation'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+        <i class='zmdi zmdi-menu'></i>
+      </button>
+      <a class='navbar-brand logo' href='{{ $brand.homelink | relLangURL }}'>
+        <img alt="Podigee - The Podcast Publishing Platform" class="podigee-logo" src="/images/podigee-logo-black-trans-70.png" />
+        <span class='text-colored'>
+          {{ $brand.name }}
+        </span>
+      </a>
+    </div>
+    <div class='navbar-collapse collapse' id='navbar-menu'>
+      <ul class='nav navbar-nav nav-custom-left'>
+        {{ range $brand.navigation }}
+          {{ if not .navigation }}
+            <li>
+              <a href='{{ .href | relLangURL }}'>{{ i18n .title }}</a>
+            </li>
+          {{ else }}
+            <li class='dropdown'>
+              <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button'>
+                {{ i18n .title }}
+                <span class='caret'></span>
+              </a>
+              <ul class='dropdown-menu'>
+                {{ range .navigation}}
+                  {{ if .divider }}
+                    <li class='divider' role='separator'></li>
+                  {{ else }}
+                    <li>
+                      <a href='{{ .href | relLangURL }}'>{{ i18n .title }}</a>
+                    </li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="switch-language" href="/switch-language/en/de">{{ i18n "to_other_language" }}</a>
+        </li>
+        <li>
+          <a class="btn btn-inverse btn-bordered navbar-btn" href='{{ $.Param "register_link" }}'>{{ i18n "register" }}</a>
+        </li>
+        <li>
+          <a href='{{ $.Param "login_link" }}'>{{ i18n "login" }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

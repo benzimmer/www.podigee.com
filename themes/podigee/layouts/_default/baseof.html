@@ -2,15 +2,59 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+    <title>{{ $.Param "page_title" }}</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+
+    <meta content='{{ $.Param "description" }}' name='description'>
+    <meta content='{{ $.Param "authors" }}' name='author'>
+    <meta content='{{ delimit ($.Param "tags") "," }}' name='keywords'>
+
+    <link href='/favicons/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+    <link href='/favicons/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='/favicons/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='/favicons/apple-touch-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='/favicons/apple-touch-icon-60x60.png' rel='apple-touch-icon' sizes='60x60'>
+    <link href='/favicons/apple-touch-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+    <link href='/favicons/apple-touch-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+    <link href='/favicons/apple-touch-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+    <link href='/favicons/favicon-16x16.png' rel='icon' type='image/png'>
+    <link href='/favicons/favicon-32x32.png' rel='icon' type='image/png'>
+    <link href='/favicons/favicon-96x96.png' rel='icon' type='image/png'>
+    <link href='/favicons/favicon-160x160.png' rel='icon' type='image/png'>
+
+    <meta content='#ffffff' name='msapplication-TileColor'>
+    <meta content='/favicons/mstile-144x144.png' name='msapplication-TileImage'>
+    <meta content='/favicons/mstile-70x70.png' name='msapplication-square70x70logo'>
+    <meta content='/favicons/mstile-150x150.png' name='msapplication-square150x150logo'>
+    <meta content='/favicons/mstile-310x310.png' name='msapplication-square310x310logo'>
+
+    <meta content='{{ $.Param "page_title" }}' property='og:title'>
+    <meta content='{{ $.Param "description" }}' property='og:description'>
+    <meta content='website' property='og:type'>
+    <meta content='{{ .URL | absLangURL }}' property='og:url'>
+    <meta content='{{ "/images/podigee-logo-with-claim.png" | absLangURL }}' property='og:image'>
+    <meta content='Podigee' property='og:site_name'>
+    <meta content='https://www.facebook.com/podigee' property='article:publisher'>
+
+    <meta content='summary_large_image' name='twitter:card'>
+    <meta content='@podigee' name='twitter:site'>
+    <meta content='{{ .URL | absLangURL }}' name='twitter:url'>
+    <meta content='{{ $.Param "page_title" }}' name='twitter:title'>
+    <meta content='{{ $.Param "description" }}' name='twitter:description'>
+    <meta content='{{ "/images/podigee-logo-with-claim.png" | absLangURL }}' name='twitter:image'>
+
+    <meta content='{{ $.Param "page_title" }}' itemprop='name'>
+    <meta content='{{ $.Param "description" }}' itemprop='description'>
+    <meta content='{{ "/images/podigee-logo-with-claim.png" | absLangURL }}' itemprop='image'>
 
     <link rel="stylesheet" media="screen" href="/css/app.css">
+    <link href='{{ printf "/css/colors/%s.css" (index .Site.Data.brands .Params.brand).color }}' rel="stylesheet">
   </head>
   <body>
     {{ partial "header" . }}
 
     {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
     {{ end }}
 
     {{ partial "footer" . }}
