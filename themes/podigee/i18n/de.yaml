@@ -1,2 +1,22 @@
 - id: home
   translation: Startseite
+- id: plans
+  translation: Angebote
+- id: features
+  translation: Features
+- id: blog
+  translation: Blog
+- id: more
+  translation: Mehr
+- id: podcast_player
+  translation: Podcast Player
+- id: help
+  translation: Hilfe
+- id: changelog
+  translation: Changelog
+- id: to_other_language
+  translation: Go to english page
+- id: login
+  translation: Einloggen
+- id: register
+  translation: Anmelden

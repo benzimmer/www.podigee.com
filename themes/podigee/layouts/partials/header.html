@@ -43,7 +43,15 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a class="switch-language" href="/switch-language/en/de">{{ i18n "to_other_language" }}</a>
+          {{ if .IsTranslated }}
+            {{ range .Translations }}
+              {{ if eq .Lang "de" }}
+                <a class="switch-language" href="{{ .Permalink }}">{{ i18n "to_other_language" }}</a>
+              {{ else }}
+                <a class="switch-language" href="{{ .Permalink }}">{{ i18n "to_other_language" }}</a>
+              {{ end}}
+            {{ end}}
+          {{ end }}
         </li>
         <li>
           <a class="btn btn-inverse btn-bordered navbar-btn" href='{{ $.Param "register_link" }}'>{{ i18n "register" }}</a>
