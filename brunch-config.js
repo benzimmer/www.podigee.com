@@ -2,8 +2,9 @@
 exports.files = {
   javascripts: {
     joinTo: {
-      'js/vendor.js': /^(?!app)/, // Files that are not in `app` dir.
-      'js/app.js': /^app/
+      'js/vendor.js': /^themes\/podigee\/src\/vendor/,
+      'js/jquery.js': /^themes\/podigee\/src\/vendor\/jquery.js/,
+      'js/app.js': /^themes\/podigee\/src\/js/
     }
   },
   stylesheets: {joinTo: '/css/app.css'}
@@ -19,5 +20,5 @@ exports.plugins = {
 
 exports.paths = {
   public: 'themes/podigee/static',
-  watched: ['themes/podigee/src/js', 'themes/podigee/src/css']
+  watched: ['themes/podigee/src/']
 };
