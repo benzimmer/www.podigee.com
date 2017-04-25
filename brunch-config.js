@@ -7,7 +7,11 @@ exports.files = {
       'js/app.js': /^themes\/podigee\/src\/js/
     }
   },
-  stylesheets: {joinTo: '/css/app.css'}
+  stylesheets: {
+    joinTo: {
+      '/css/app.css': /css\/styles.scss$/
+    }
+  }
 };
 
 exports.plugins = {
