@@ -51,6 +51,8 @@
     <link rel="stylesheet" media="screen" href="/css/app.css">
     {{ $brand := (index .Site.Data.brands ($.Param "brand" | default "hosting")) }}
     <link href='{{ printf "/css/colors/%s.css" $brand.color }}' rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" />
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
 
     <script src="/js/jquery.js"></script>
     <script src="/js/vendor.js"></script>
