@@ -1,0 +1,21 @@
+{{ $podcasts := .Site.Data.podcasts.podcasts }}
+{{ range $podcasts }}
+  <a title="{{ .name }}" target="blank" class="col-xs-6 col-sm-3 hidden podcast-panel" href="{{ .url }}">
+    <img width="150" height="150" class="podcast-cover" src="{{ .cover_path }}" alt="{{ .title }} cover image" />
+  </a>
+{{ end }}
+
+<script>
+  jQuery.fn.shuffle = function () {
+      var j
+      for (var i = 0; i < this.length; i++) {
+          j = Math.floor(Math.random() * this.length)
+          $(this[i]).before($(this[j]))
+      }
+      return this
+  }
+  $(function() {
+    $('.podcast-panel').shuffle()
+    $('.podcast-panel').slice(0, 4).show().removeClass('hidden')
+  })
+</script>
