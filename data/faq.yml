@@ -1,0 +1,56 @@
+---
+de:
+  - question: Was passiert wenn ich mein Stunden-Limit überschreite?
+    answer: 'Keine Angst: Wir stoppen nicht den Upload wenn du gelegentlich über dein
+     Limit hinausgehst. Wenn das regelmäßig passiert werden wir dich kontaktieren und
+     mit dir versuchen eine Lösung zu finden.'
+  - question: Welche Zahlungsmethoden sind möglich?
+    answer: Wir akzeptieren alle gängigen Kreditkarten. Wenn du auf andere Weise zahlen
+     möchtest, wie zum Beispiel Überweisung oder PayPal, kontaktiere uns und wir sehen
+     was wir für dich tun können.
+  - question: Kann ich unkomprimiertes Audio hochladen?
+    answer: Ja! Eigentlich ist das sogar genau das was wir von dir wollen. Audio-Qualitätsverbesserung
+     und Kodierung in verschiedene Formate sind nämlich in jedem Paket mit drin.
+  - question: Wie werden "Stunden Audio" berechnet?
+    answer: Wenn du eine Datei hochlädst schauen wir auf ihre Länge in Minuten. Wenn
+     die Folge kodiert wird, wird diese Menge von deinem Kontingent abgezogen.
+  - question: Kann ich einen bestehenden Podcast migrieren?
+    answer: Na klar! Wir erledigen es sogar für dich, wenn du einen bezahltes Packet
+     wählst. Kontaktiere uns und los gehts.
+  - question: Wie viele Podcasts kann ich anlegen? Wie beeinflusst das mein Stunden-Limit?
+    answer: Du kannst so viele Podcasts hinzufügen wie du willst. Die Stunden, die
+     in deinem Packet verfügbar sind werden zwischen den Podcasts geteilt.
+  - question: Werden meine Dateien irgendwann gelöscht?
+    answer: Nein. Alles was du hochlädst bleibt so lange online bis du es zurückziehst
+     oder löschst. Versprochen!
+  - question: Kann ich die Auphonic Einstellungen beeinflussen?
+    answer: Ja, du kannst einstellen welche Algorithmen verwendet werden und auch ihre
+      Einstellungen selbst verändern.
+en:
+  - :question: How are "hours of audio" calculated?
+    :answer: When you upload a file we look at it's length in minutes. After the file
+      gets encoded this amount of minutes is subtracted from your monthly quota.
+  - :question: What happens when I get over my quota?
+    :answer: 'Don''t worry: You can upload more than your quota allows. The system won''t
+      stop you. However, if you do it every month we will ask you to upgrade your plan
+      eventually.'
+  - :question: Can I configure Auphonic settings?
+    :answer: Yes, you can influence which algorithms will be used and also configure
+      them like you would on Auphonic.
+  - :question: Will my files expire?
+    :answer: No. Everything you upload and publish stays online until you unpublish
+      or delete it yourself. Promised!
+  - :question: Can I migrate an existing podcast?
+    :answer: Of course! Actually we will do it for you. It is included with every paid
+      plan. Just contact us and we'll set you up.
+  - :question: How many podcasts can I create? How does having multiple podcasts affect
+      the quota?
+    :answer: You can add as many podcasts as you like. The amount of minutes per month
+      is shared between all of them.
+  - :question: Can I upload high-res (raw) audio files?
+    :answer: Yes! Actually you should upload as high quality files as possible, quality
+      enhancement and transcoding is already included in your plan.
+  - :question: Which payment methods do you accept?
+    :answer: We accept all major credit cards. If you'd like to pay with a different
+      method, like PayPal or wiretransfer, please contact us and we'll work something
+      out!
