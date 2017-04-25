@@ -1,5 +1,0 @@
----
-brand: hosting
----
-
-# Podcast Hosting

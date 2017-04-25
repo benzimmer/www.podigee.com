@@ -1,0 +1,27 @@
+{{ $testimonials := (index .Site.Data.testimonials .Page.Lang) }}
+{{ range $testimonials }}
+  <div class='testimonial hidden col-xs-12 col-sm-8 col-sm-offset-2'>
+    <div class='quote fadeIn animated wow' data-wow-delay='.1s'>
+      &ldquo;
+      {{ .text|safeHTML }}
+      &ldquo;
+    </div>
+    <div class='customer animated fadeIn wow' data-wow-delay='.3s'>
+      <a href='{{ .podcast_url }}' target='_blank'>
+        <img height="64" width="64" class="podcast-cover" src="{{ .podcast_cover }}" alt="{{ .podcast_name }} cover image" />
+      </a>
+      <div class='name'>
+        {{ .name }}
+        <a href='{{ .podcast_url }}' target='_blank'>{{ .podcast_name }}</a>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+<script>
+  $(function() {
+    var testimonials = $('.testimonial');
+    var testimonial = testimonials[Math.floor(Math.random() * testimonials.length)]
+    $(testimonial).removeClass('hidden')
+  })
+</script>

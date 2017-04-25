@@ -1,4 +1,4 @@
-{{ $brand := (index .Site.Data.brands .Params.brand) }}
+{{ $brand := (index .Site.Data.brands ($.Param "brand" | default "hosting")) }}
 <footer class='section footer footer-sm'>
   <div class='container'>
     <div class='row'>

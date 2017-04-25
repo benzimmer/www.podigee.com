@@ -49,7 +49,8 @@
     <meta content='{{ "/images/podigee-logo-with-claim.png" | absLangURL }}' itemprop='image'>
 
     <link rel="stylesheet" media="screen" href="/css/app.css">
-    <link href='{{ printf "/css/colors/%s.css" (index .Site.Data.brands .Params.brand).color }}' rel="stylesheet">
+    {{ $brand := (index .Site.Data.brands ($.Param "brand" | default "hosting")) }}
+    <link href='{{ printf "/css/colors/%s.css" $brand.color }}' rel="stylesheet">
 
     <script src="/js/jquery.js"></script>
     <script src="/js/vendor.js"></script>

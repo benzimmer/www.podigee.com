@@ -1,0 +1,102 @@
+---
+podcasts:
+  - name: Nur ein Versuch
+    cover: https://prismic-io.s3.amazonaws.com/podigee/a9cbb386168a209c26289aaf6ac9d1e527d80eaf_nureinversuch_cover_klein.jpg
+    url: http://viertausendhertz.de/nur-ein-versuch/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/nur-ein-versuch.jpg"
+  - name: Systemfehler
+    cover: https://prismic-io.s3.amazonaws.com/podigee/1f1a0691bf940767de9fd26db3cf331d43d2793c_systemfehler_cover_klein.jpg
+    url: http://viertausendhertz.de/systemfehler/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/systemfehler.jpg"
+  - name: Nur ein Versuch
+    cover: https://prismic-io.s3.amazonaws.com/podigee/a9cbb386168a209c26289aaf6ac9d1e527d80eaf_nureinversuch_cover_klein.jpg
+    url: http://viertausendhertz.de/nur-ein-versuch/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/nur-ein-versuch.jpg"
+  - name: Walrus & the Bear
+    cover: https://prismic-io.s3.amazonaws.com/podigee/2b7a6f8a53f980443e0c08b6e5f1562eca9c28e4_walrusandthebear_groc39f14674629852bf1.png
+    url: http://viertausendhertz.de/walrus-and-the-bear/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/walrus-the-bear.png"
+  - name: Kiezrekorder
+    cover: https://prismic-io.s3.amazonaws.com/podigee/42dba67ce55a71ff22403f79d180e17de1b77b13_kiezrekorder_cover_klein.jpg
+    url: http://viertausendhertz.de/kiezrekorder/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/kiezrekorder.jpg"
+  - name: Pixelstammtisch
+    cover: https://prismic-io.s3.amazonaws.com/podigee/290b3d50c2f44d9dcebd1d003f2ee6790efcd3b0_14282524303ad5.png
+    url: http://pixelstammtisch.de/
+    twitter: PixelStammtisch
+    cover_path: "/podcasts/pixelstammtisch.png"
+  - name: Mixer
+    cover: https://prismic-io.s3.amazonaws.com/podigee/0a8e37f0c2ca7ac0d59c60aa40d0aaac3209eaf1_mixer_cover_klein.jpg
+    url: http://viertausendhertz.de/mixer/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/mixer.jpg"
+  - name: Elementarfragen
+    cover: https://prismic-io.s3.amazonaws.com/podigee/b738906c26b3d7ee4263044072af51a1b13d32cd_elementarfragen_cover_klein.jpg
+    url: http://viertausendhertz.de/elementarfragen/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/elementarfragen.jpg"
+  - name: Durch die Gegend
+    cover: https://prismic-io.s3.amazonaws.com/podigee/42b82dc4a3636d07a8b0106f6687486baf495de1_durchdiegegend_cover_klein.jpg
+    url: http://viertausendhertz.de/durch-die-gegend/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/durch-die-gegend.jpg"
+  - name: Frequenz 4000
+    cover: https://prismic-io.s3.amazonaws.com/podigee/a56af9dedce265389970cacb2c6e961ec0ba72e6_frequenz_cover_klein.jpg
+    url: http://viertausendhertz.de/frequenz-4000/
+    twitter: "@4000hertz"
+    cover_path: "/podcasts/frequenz-4000.jpg"
+  - name: Research VR
+    cover: https://prismic-io.s3.amazonaws.com/podigee/42d587eb61bae48fdb5e4e231231c80d3fcaec97_1452215091a841.png
+    url: https://researchvr.podigee.io
+    twitter: ResearchVRcast
+    cover_path: "/podcasts/research-vr.png"
+  - name: Die Mama Akademie
+    cover: https://prismic-io.s3.amazonaws.com/podigee/ea945041ed4b0344e626c356be6f3ba4b808113d_1436954084ac8d.jpg
+    url: http://podcast.mama-akademie.de/
+    twitter: 
+    cover_path: "/podcasts/die-mama-akademie.jpg"
+  - name: "#VdS Millernton #NdS"
+    cover: https://prismic-io.s3.amazonaws.com/podigee/a6c136bca97829b6d3089342ea9494e532af7d22_millernton-logo.png
+    url: http://fcsp.hamburg
+    twitter: MillernTon
+    cover_path: "/podcasts/vds-millernton-nds.png"
+  - name: Den macht sogar meine Oma
+    cover: https://prismic-io.s3.amazonaws.com/podigee/d083b6b3a8c6b1f26ae304e746a8477016f68875_14393167520690.jpg
+    url: http://sogarmeineoma.podigee.io/
+    twitter: sogarmeineoma
+    cover_path: "/podcasts/den-macht-sogar-meine-oma.jpg"
+  - name: Kwerfunk
+    cover: https://prismic-io.s3.amazonaws.com/podigee/adf1648a8be7ec009c6b43728ce35d39819f44ba_14091422340283.jpg
+    url: http://kwerfunk.eu/
+    twitter: kwerfunk
+    cover_path: "/podcasts/kwerfunk.jpg"
+  - name: Für's Protokoll
+    cover: https://prismic-io.s3.amazonaws.com/podigee/cd3a9209df6f8534e636a22f448d938f3994564f_1416677296518a.jpeg
+    url: http://www.protokollcast.de/
+    twitter: mkalmes
+    cover_path: "/podcasts/fur-s-protokoll.jpeg"
+  - name: One Way Or - Jewish Questions and Musings
+    cover: https://prismic-io.s3.amazonaws.com/podigee/b2d36500f01e2153ba4c1cbe56a1b16c071282fa_1413872145fd85.jpg
+    url: https://onewayor.com/
+    twitter: OneWayOrPodcast
+    cover_path: "/podcasts/one-way-or-jewish-questions-and-musings.jpg"
+  - name: ShopTechTalks
+    cover: https://prismic-io.s3.amazonaws.com/podigee/531e083af1801705d6d6d0bd8211aa42387e990a_14098240179dd2.png
+    url: http://shoptechtalks.podigee.io/
+    twitter: ShopTechBlog
+    cover_path: "/podcasts/shoptechtalks.png"
+  - name: Word of the Day
+    cover: https://prismic-io.s3.amazonaws.com/podigee/63f8a6b64af81a898e6aedc2de54f02e40b28fc6_142203528027af.jpg
+    url: http://word-des-tages.languageminingcompany.com/
+    twitter: sprachco
+    cover_path: "/podcasts/word-of-the-day.jpg"
+  - name: Plugs, Play, Pedagogy
+    cover: https://prismic-io.s3.amazonaws.com/podigee/d7b2a1c3d9ddd34eb085d32c88bb1a144677b506_14080380220a4a.jpg
+    url: http://plugsplaypedagogy.podigee.io/
+    twitter: 
+    cover_path: "/podcasts/plugs-play-pedagogy.jpg"

@@ -150,10 +150,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
 require.register("themes/podigee/src/js/initialize.js", function(exports, require, module) {
 'use strict';
 
-document.addEventListener('DOMContentLoaded', function () {
-  // do your setup here
-  console.log('Initialized app');
-});
+console.log('Initialized app');
 
 });
 
