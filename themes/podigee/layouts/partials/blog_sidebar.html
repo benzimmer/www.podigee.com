@@ -36,9 +36,16 @@
     </p>
     <!-- End mc_embed_signup -->
 
-    <h4 class='padding-t-b-10 text-bold-6 h4'>{{ i18n "latest_posts" }}</h4>
+    <h4 class='padding-t-b-10 text-bold-6 h4'>
+      {{ if eq .Section "blog" }}
+        {{ i18n "latest_posts" }}
+      {{ end }}
+      {{ if eq .Section "changelog" }}
+        {{ i18n "latest_entries" }}
+      {{ end }}
+    </h4>
     <ul class='nav-list'>
-      {{ range first 10 (after 1 (where .Site.Pages.ByDate.Reverse "Section" "blog")) }}
+      {{ range first 10 (after 1 (where .Site.Pages.ByDate.Reverse "Section" .Section)) }}
       <li>
         <a title="{{ .Title }}" href="{{ .Permalink }}">{{ .Title }}</a>
       </li>

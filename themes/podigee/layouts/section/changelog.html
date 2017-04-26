@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{ partial "changelog_header" .}}
+
+  <section class='section'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-9'>
+          <div class='blog-detail-box posts'>
+          {{ range .Data.Pages.ByDate.Reverse }}
+            {{ partial "changelog_entry" . }}
+            <hr>
+          {{ end }}
+          </div>
+        </div>
+
+        {{ partial "blog_sidebar.html" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}

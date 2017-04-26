@@ -8,7 +8,7 @@ theme = "podigee"
   page_title = "Podigee Podcast Hosting"
   description = "Podigee is awesome"
   authors = "Podigee"
-  tags = [
+  keywords = [
     "podcast",
     "hosting",
     "publishing",

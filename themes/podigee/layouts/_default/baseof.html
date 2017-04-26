@@ -8,7 +8,7 @@
 
     <meta content='{{ $.Param "description" }}' name='description'>
     <meta content='{{ $.Param "authors" }}' name='author'>
-    <meta content='{{ delimit ($.Param "tags") "," }}' name='keywords'>
+    <meta content='{{ delimit (.Keywords) "," }}' name='keywords'>
 
     <link href='/favicons/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
     <link href='/favicons/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>

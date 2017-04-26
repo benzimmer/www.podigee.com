@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ partial "changelog_header" .}}
+  <section class='section'>
+    <div class='container'>
+      <a class="back-link" href='{{ "/changelog" | relLangURL }}'>&lt; {{ i18n "back_to_overview" }}</a>
+      <div class='row'>
+        <div class='col-md-9'>
+          <div class='blog-detail-box posts'>
+            {{ partial "changelog_entry" . }}
+            <hr>
+          </div>
+        </div>
+        {{ partial "blog_sidebar.html" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}
+

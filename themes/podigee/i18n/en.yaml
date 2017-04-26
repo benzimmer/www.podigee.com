@@ -34,7 +34,11 @@
   translation: No spam. We promise.
 - id: latest_posts
   translation: Latest posts
+- id: latest_entries
+  translation: Latest entries
 - id: published_by
   translation: by
 - id: published_on
   translation: published on
+- id: back_to_overview
+  translation: Back to overview
