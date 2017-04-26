@@ -1,0 +1,71 @@
+---
+title: "About the recent statistics problems"
+keywords: 
+  - post-mortem
+description: "We recently had some issues with our statistics system. Some data did not get tracked. We were able to recover most of the missing stats."
+date: 2016-08-14
+image: /blog/pexels-photo-1.jpg
+summary: "TL;DR: We recently had some issues with our statistics system. Some data did not get tracked. We were able to recover most of the missing stats."
+author: ben
+---
+<div class="blog-detail-box">
+              
+              
+              
+              <div class="blog-text m-t-30">
+                <p>Some of you might have noticed that podcast statistics were lacking data from July 30th to August 2nd. Here is what happened, how we recovered the data and what we are going to do to avoid something like this in the future.</p>
+                
+                <h2>What happened</h2>
+                
+                <p>On Saturday, 29th of June, shortly before midnight, our download statistics collector stopped reporting downloads to the part of Podigee that stores the analytics data for later use. This situation started due to a change we made to how our application servers handle SSL connections. Due to missing monitoring on that part of our infrastructure it took until August 2nd around 12pm (UTC)  for us to notice that there was something wrong and immediately took action to first get the reporting working again and second to recover the data that was not reported from our fallback mechanism.</p>
+                
+                <h2>How we recovered</h2>
+                
+                <p>We were able to fix the reporting functionality about an hour after we learned about the problem. Recovering the missing data proved to be more difficult than expected because of a second failure in our fallback mechanism. We still managed to recover the data for the whole timeframe, with only part of the user-agent data missing.</p>
+                
+                <h2>How we make sure it does not happen again</h2>
+                
+                <p>To prevent something like this happening again in the future we will (and partly already have) close the gaps in our monitoring and investigate improving the fallback collection of statistics data from our CDN.</p>
+                
+                <p>If you want the full technical rundown of what happened feel free to read on.</p>
+                
+                <h2>Full timeline</h2>
+                
+                <h3>A little bit of background on our infrastructure</h3>
+                
+                <p>When it comes to statistics collection our infrastructure consists of two parts. The CDN that serves media files and an application that normalizes and writes statistics data into a database. For every download the CDN tells the collector which file was downloaded together with all kinds of metadata like the time the download happened, the application that downloaded the file, how much of the file was actually downloaded etc.</p>
+                
+                <h3>2016-07-29 around 20:00 UTC</h3>
+                
+                <p>We deployed new SSL certificates to our infrastructure and in the same effort also changed the way our statistics collector terminates SSL connections. More specifically we switched from a dedicated endpoint to SNI which no longer allows SSL connections to be made just by IP but requires the client to specifically request the hostname it wants to talk to. Unfortunately the downloads reporter on the CDN was not configured to do this properly.</p>
+                
+                <h3>2016-07-29 around 21:00 UTC</h3>
+                
+                <p>After the endpoint switch was fully propagated the reporter was no longer able to deliver it's datapoints to the collector application and therefore no statistics were collected from that point on forward.</p>
+                
+                <h3>2016-07-30 around 05:30 UTC</h3>
+                
+                <p>All of this would only have been a minor problem, because of course we have a fallback in place to compensate for common situations like these (connection failures can happen for a multitude of reasons not always in our control). Unfortunately the fallback mechanism, which basically just writes the data that normally gets reported to the collector to a file on disk, stopped working roughly 8 hours after the reporting stopped.</p>
+                
+                <h3>2016-08-02 around 12:00 UTC</h3>
+                
+                <p>We received a message from one of our podcasters that there was something weird going on with the statistics. We immediately had a look and quickly located the problem. The first actions included restarting the fallback mechanism which started working again around 12:10 UTC. After that work on fully understanding the problem with the reporter and working on a fix started.</p>
+                
+                <h3>2016-08-02 around 13:30 UTC</h3>
+                
+                <p>The reporter was reconfigured to properly address the collector application and after deploying the fix everything worked normally again. Around that time we also informed our users about the problem via <a href="https://twitter.com/podigee/status/760476877119160321">Twitter</a>.</p>
+                
+                <h3>2016-08-02 around 14:00 UTC</h3>
+                
+                <p>With reporting working again we started to focus on recovering the missing data. Fortunately although the fallback solution also failed we discovered that most of the data was present in the error logs of the reporter application. Most of the data meaning everything but user agents (so basically the information which device and software the downloader was using).</p>
+                
+                <h3>2016-08-06</h3>
+                
+                <p>After consolidating all the data sources we had for the incident timeframe we recovered the data with only user agents missing for the time between 2016-07-30 5:27 and 2016-08-02 13:03.</p>
+                
+                <h2>Any questions left?</h2>
+                
+                <p>If you have any question about the incident or Podigee in general, please do not hesitate to <a href="mailto:hello@podigee.com">get in touch</a>!</p>
+              </div>
+              
+            </div>

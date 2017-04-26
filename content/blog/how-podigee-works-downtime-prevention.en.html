@@ -1,0 +1,55 @@
+---
+title: "How Podigee works: Downtime prevention"
+keywords: 
+  - how-podigee-works
+  - infrastructure
+  - security
+  - reliability
+  - podigee
+description: "Learn which measures we have in place to make sure Podigee is always available."
+date: 2014-07-24
+image: /blog/uptime-1.jpg
+summary: "In this series we explain how Podigee works. This time we talk about the measures we have in place to make sure Podigee is always available to you and your listeners."
+author: ben
+---
+<div class="blog-detail-box">
+              
+              
+              
+              <div class="blog-text m-t-30">
+                <p>In the following paragraphs you will learn what we do to keep Podigee up at all times, make sure it always performs as you and we expect it to and what our plan B is if things go really wrong. Since launch, Podigee has had an availability close to 100% over the whole period. But that is not a coincidence.</p>
+                
+                <h2>Chosing reliable Service Providers</h2>
+                
+                <p>The first thing you need to build a reliable service is an even more reliable foundation. To build Podigee we have chosen service providers that are trusted by thousands of companies and developers for building web services. Worth mentioning here are <a href="https://aws.amazon.com/s3/">Amazon S3</a> for storage of files (your audio and image files are stored there), <a href="https://www.heroku.com">Heroku</a> that hosts and runs the actual application and of course <a href="https://www.auphonic.com">Auphonic</a>, the magical Audio wizard that improves audio quality and encodes your episode to the most popular audio formats. For all three of them we have never seen any outage or even hiccup over the past year. They are up and so are we.</p>
+                
+                <h2>Prevent failure before it reaches production</h2>
+                
+                <p>Of course, sometimes things go wrong. A server goes down, or a bug gets introduced into the software. Failure happens, so prepare for it.</p>
+                
+                <p>As far as servers are concerned, everything behind Podigee is run redundantly. That means that if one component has an issue and stops running, another one will take over the tasks. The application itself, as well as our CDN, run on at least two servers, so if one goes down nobody (except us) will notice. There is always another server left that can handle all of the traffic until the second one returns. The 'bad' server will try healing itself (by rebooting) or will report to us if manual intervention is required.</p>
+                
+                <p>For the prevention of software bugs reaching customers we mainly rely on automated tests. Those tests check the whole application through unit and integration testing (so called automated tests, that check the correctness of the application code and even simulates real user interactions, like filling out a form). Additionally we have an almost exact clone of the production installation of the application, the so called 'staging environment', where we test every new feature thoroughly before it goes out to our customers. Third and last we can always reset the application back to an older version in seconds if we discover that a bug has slipped through our testing process.</p>
+                
+                <h2>Measure &amp; Monitor</h2>
+                
+                <p>If a bug reaches production or the amount of traffic increases drastically we don't want the customer to discover it first. To prevent learning about a bug through Twitter we have several measuring and monitoring solutions in place that notify us when something unusual is happening.</p>
+                
+                <p>Every time an error happens in the application we are notified immediately and our goal is to already have a fix prepared even before the first customer that experienced the error reaches out to our support.</p>
+                
+                <p>The same goes for increases in traffic. We receive a notification every time there are more visitors or downloads than usual for a podcast. This allows us to scale up the application by given it more resources. For example, by adding more servers, which only takes a couple of minutes.</p>
+                
+                <h2>Have a Plan B</h2>
+                
+                <p>Of course, you always need to have a plan B in case something really, really bad happens. Here is ours:</p>
+                
+                <p>Every bit of information like audio, images, text or metadata, that our customers put into Podigee, gets backed up every hour. So if we lose the database or files we never lose more than an hour of data. Even if a customer accidentally deletes data, we are able to restore it (but don't do it, podcast responsibly! ;)</p>
+                
+                <p>Finally, the basic parts of our application are built in a way that allows us to switch to another provider within a relatively short amount of time. For example if one of our service providers decides to cease operations or has a major outage with no sign of quick recovery.</p>
+                
+                <h2>Do you want to learn more about Podigee?</h2>
+                
+                <p>If you like to learn more how Podigee works <a href="https://www.podigee.com/blog/feed">subscribe to our blog</a> to be informed about future posts in this series. If you want to know more about Podigee in general you can simply follow us on <a href="https://twitter.com/podigee">Twitter</a>, <a href="https://www.facebook.com/podigee">Facebook</a> or <a href="https://google.com/+podigee">Google+.</a></p>
+              </div>
+              
+            </div>

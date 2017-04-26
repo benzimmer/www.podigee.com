@@ -1,0 +1,63 @@
+{{ define "main" }}
+  <section class='home bg-img-1' id='home' style='background: url(/blog/podigee-blog-banner.jpg) center; background-size: cover;'>
+    <div class='bg-overlay'></div>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <div class='home-wrapper text-center'>
+            <h2 class='animated fadeInDown wow text-white' data-wow-delay='.1s'>
+              The Podigee Blog
+            </h2>
+            <p class='animated fadeInDown wow text-light' data-wow-delay='.2s'>
+            News from the broadcast tower
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='section blog-section'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-9'>
+          <div class='blog-wrapper clearfix'>
+          {{ range .Data.Pages.ByDate.Reverse }}
+            <div class=''>
+              <div class='blog-post'>
+                <div class='post-media'>
+                  <a href="{{ .Permalink }}"><img alt='{{ .Title }}' class='img-responsive' src='{{ .Params.image }}'>
+                  </a>
+                </div>
+                <article class='post-body'>
+                  <div class='post-info'>
+                    <div class='date'>
+                      <span class='day'>{{ .Date.Format "02" }}</span>
+                      <br>
+                      <span class='month'>{{ .Date.Format "Jan"}}</span>
+                    </div>
+                    <div class='meta-container clearfix'>
+                      <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3>
+                      </a>
+                      <div class='meta'>
+                        {{ $author := (index .Site.Data.authors .Params.author) }}
+                        by: <a href="mailto:{{ $author.email }}">{{ $author.name }}</a>
+                      </div>
+                    </div>
+                  </div>
+                  {{ .Summary }}
+                  <div class='text-right'>
+                    <a class="read-more text-uppercase" href="{{ .Permalink }}">{{ i18n "read_more" }}</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          {{ end }}
+          </div>
+        </div>
+
+        {{ partial "blog_sidebar.html" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -20,3 +20,21 @@
   translation: Login
 - id: register
   translation: Register
+- id: read_more
+  translation: read more...
+- id: subscribe_newsletter_title
+  translation: Subscribe to our newsletter
+- id: subscribe_newsletter_text
+  translation: Get the latest news, articles and tutorials all around podcasts.
+- id: preferred_language
+  translation: Preferred language
+- id: subscribe
+  translation: Subscribe
+- id: no_spam
+  translation: No spam. We promise.
+- id: latest_posts
+  translation: Latest posts
+- id: published_by
+  translation: by
+- id: published_on
+  translation: published on

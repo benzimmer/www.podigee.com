@@ -1,0 +1,79 @@
+---
+title: "Introducing the new Podigee podcast statistics system"
+keywords: 
+  - statistics
+  - podcast
+  - downloads
+  - feature
+description: "Details about the new Podigee podcast statistics system."
+date: 2015-07-21
+image: /blog/221926.jpg
+summary: "After a lot of work and a few setbacks we're proud to finally make our new podcast statistics system available for all Podigee users."
+author: ben
+---
+<div class="blog-detail-box">
+              
+              
+              
+              <div class="blog-text m-t-30">
+                <h2>The short version</h2>
+                
+                <p>We greatly improved our statistics system by improving both backend and frontend. <strong>Tracking of downloads</strong> is more accurate, <strong>browsing of statistics</strong> is a lot more fun and you finally can see detailed episode statistics. It's already available for all Podigee users, <a href="https://www.podigee.com/podcasts">go check it out now</a>!</p>
+                
+                <h3>The new statistics in action</h3>
+                
+                <div data-oembed="https://www.youtube.com/" data-oembed-type="video" data-oembed-provider="youtube"><iframe width="480" height="270" src="https://www.youtube.com/embed/D0XM8p6kkL8?feature=oembed" frameborder="0" allowfullscreen></iframe></div>
+                
+                <h2>The long version</h2>
+                
+                <p>At the first look counting podcast downloads seems like an easy task. After completely redoing our statistics system we found it's not quite that easy. So as part of the new system we also had to look how we could make the "old" data we collected over the last year more accurate by working around the newly discovered oddities. Fortunately we already captured enough data to apply our findings.</p>
+                
+                <h3>What data do we collect</h3>
+                
+                <p>For a single download we collect the following data points. The points we added with the new system are listed in bold.</p>
+                
+                <ul>
+<li>Filename (for mapping to an episode/podcast)</li>
+<li>Geographic data based on the IP address</li>
+<li>
+<strong>Download source/context</strong> (feed, web player, direct download)</li>
+<li>User agent (podcast client, browser, device)</li>
+<li>Amount of downloaded bytes (to see if the download was completed)</li>
+<li>
+<strong>Range</strong> (to see if only a part of the file was downloaded)</li>
+<li>Date and time</li>
+<li>Why simply counting download requests is not enough</li>
+</ul>
+                
+                <p class="block-img"><img src="/blog/statistics-download-numbers.png" alt="statistics-download-numbers" width="1420" height="237"></p>
+                
+                <h3>A download is a download, not!</h3>
+                
+                <p>There are basically two different kinds of downloads: Full downloads and streaming downloads. A full download is, for example, when your podcast client downloads an episode as a whole when you have wifi connection, so you can listen to it on public transport without using mobile bandwidth. When streaming an episode, the general assumption is that the client fetches only the part of the file from the server that you are currently listening to (plus some buffer to avoid stopping playback when the connection is bad). The main problem with this is, that it is really hard to determine when a file was completely downloaded with some clients chopping the file into a few larger parts and some clients requesting smaller parts and therefore more. One negative example from our data was the iOS Podcasts app, that at one time split a 60 minute file into about 3000 chunks.  Because we did not expect something like this, this resulted in adding a few thousand downloads to the episode.</p>
+                
+                <h3>Why the new numbers don't fit the old ones</h3>
+                
+                <p>As a result to those findings we also reprocessed the data collected before the new system was in place and were able to make the numbers a lot more realistic. This means also, in a lot of cases, that download numbers are now a lot smaller than they were before. The next step on our side will be to actually count streaming downloads by aggregating partial downloads made by the same person in a short period of time. We expect this to push the numbers up again (at least a little), so stay tuned!</p>
+                
+                <p class="block-img"><img src="/blog/statistics-downloads-graph.png" alt="statistics-downloads-graph" width="1420" height="491"></p>
+                
+                <h3>What else is new?</h3>
+                
+                <p>Besides improving the general tracking of data and it's interpretation we're super happy we now finally provide episode level statistics and a completely new interface for browsing statistics which we're looking to improve and enrich with even more data for you to take conclusions from.</p>
+                
+                <p class="block-img"><img src="/blog/statistics-date-picker.png" alt="statistics-date-picker" width="1420" height="500"></p>
+                
+                <h3>What the future brings</h3>
+                
+                <p>As already stated before, we are currently working on actually counting streaming downloads. We believe this will bring the numbers you see a lot closer to reality. Additionally, with adding context to a download we can show you a detailed breakdown how your audience consumes your podcast. We can differentiate if the download was made through the podcast feed, if it was a manual download from the website or if it was heard using the web player. Another future addition will bring the possibility to export raw statistics data to deeper analyse the data yourself (only available in larger plans).</p>
+                
+                <p>Further down the road are things like feed subscription statistics, website visits and social media statistics.</p>
+                
+                <h3>When will the new statistics be available?</h3>
+                
+                <p>Some of you already had access to the new statistics system and provided valuable feedback to smooth the rough edges. Thank you all! Today we are proud to release the new Podigee statistics for all of our users! Just go to your podcasts overview and click the Statistics link. You now also find a link to statistics in the sidebar of the podcast and episode details pages.</p>
+                
+                <p><a href="https://www.podigee.com/podcasts">Log in to your account now</a></p>
+              </div>
+              
+            </div>

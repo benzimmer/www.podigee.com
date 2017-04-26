@@ -20,3 +20,21 @@
   translation: Einloggen
 - id: register
   translation: Anmelden
+- id: read_more
+  translation: weiterlesen...
+- id: subscribe_newsletter_title
+  translation: Newsletter abonnieren
+- id: subscribe_newsletter_text
+  translation: Erhalte die letzten Neuigkeiten, Artikel und Tutorials rund ums Podcasten.
+- id: preferred_language
+  translation: Bevorzugte Sprache
+- id: subscribe
+  translation: Abonnieren
+- id: no_spam
+  translation: Kein Spam. Versprochen.
+- id: latest_posts
+  translation: Neuste Posts
+- id: published_by
+  translation: von
+- id: published_on
+  translation: Veröffentlicht am

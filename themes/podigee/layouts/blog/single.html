@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <section class='section blog-detail'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-9'>
+          <div class='blog-detail-box'>
+            <h1>{{ .Title }}</h1>
+            <p class='lead animated fadeInDown wow animated' data-wow-delay='.3s' style='visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;'>
+              {{ .Params.summary|safeHTML }}
+            </p>
+            <img class="img-responsive center-block m-b-30" src="{{ .Params.image }}" alt="{{ .Title }}" />
+            <div class='blog-text m-t-30'>
+              {{ .Content }}
+            </div>
+
+            <div class='post-info'>
+              <hr>
+              <time>
+                {{ i18n "published_on" }} {{ .Date.Format "2006-01-02" }}
+                {{ $author := (index .Site.Data.authors .Params.author) }}
+                {{ i18n "published_by" }} <a href="mailto:{{ $author.email }}">{{ $author.name }}</a>
+              </div>
+            </div>
+          </div>
+          {{ partial "blog_sidebar.html" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -17503,7 +17503,11 @@ ul li {
     height: 100%;
     width: 100%; }
 
-/* line 133, /Users/ben/Development/Podigee/podigee-public/themes/podigee/src/css/public_modern/custom.scss */
+/* line 132, /Users/ben/Development/Podigee/podigee-public/themes/podigee/src/css/public_modern/custom.scss */
+.blog-post .post-info .meta-container a h3 {
+  font-size: 20px; }
+
+/* line 137, /Users/ben/Development/Podigee/podigee-public/themes/podigee/src/css/public_modern/custom.scss */
 .blog-detail-box img {
   height: auto;
   max-height: 100%;
