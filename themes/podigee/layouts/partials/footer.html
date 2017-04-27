@@ -37,13 +37,13 @@
               <a href='mailto:hello@podigee.com'>Help &amp; Support</a>
             </li>
             <li>
-              <a href='{{ .RelRef (printf "about/tos.%s.md" .Lang) }}'>Terms &amp; Conditions</a>
+              <a href='{{ .RelRef "about/tos.en.html" }}'>Terms &amp; Conditions</a>
             </li>
             <li>
-              <a href='{{ .RelRef (printf "about/privacy.%s.md" .Lang) }}'>Privacy Policy</a>
+              <a href='{{ .RelRef "about/privacy.en.html" }}'>Privacy Policy</a>
             </li>
             <li>
-              <a href='{{ .RelRef (printf "about/imprint.%s.md" .Lang) }}'>Imprint</a>
+              <a href='{{ .RelRef "about/imprint.en.html" }}'>Imprint</a>
             </li>
           </ul>
           <p class='text-muted m-b-0'>© Podigee 2013-{{ now.Year }} All Rights Reserved</p>
