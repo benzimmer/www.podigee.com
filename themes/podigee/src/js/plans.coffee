@@ -1,4 +1,5 @@
 $ ->
+  console.log('test')
   current_currency =
     if in_euro_zone(navigator.language)
       'EUR'

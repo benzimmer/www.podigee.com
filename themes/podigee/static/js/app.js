@@ -147,10 +147,96 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
+require.register("themes/podigee/src/js/euro_zone_detector.coffee", function(exports, require, module) {
+window.in_euro_zone = function(navigator_language) {
+  var countries, country, split_language;
+  countries = ['AT', 'BE', 'CY', 'DE', 'EE', 'ES', 'FI', 'FR', 'GR', 'IE', 'IT', 'LU', 'LV', 'MT', 'NL', 'PT', 'SI', 'SK'];
+  if (!navigator_language) {
+    return false;
+  }
+  split_language = navigator_language.split('-');
+  country = split_language[split_language.length - 1];
+  if (!country) {
+    return false;
+  }
+  return countries.indexOf(country.toUpperCase()) !== -1;
+};
+
+});
+
 require.register("themes/podigee/src/js/initialize.js", function(exports, require, module) {
 'use strict';
 
-console.log('Initialized app');
+require('themes/podigee/src/js/plans');
+require('themes/podigee/src/js/euro_zone_detector');
+
+});
+
+require.register("themes/podigee/src/js/plans.coffee", function(exports, require, module) {
+$(function() {
+  var current_currency, current_frequency, hide_all_currencies, hide_all_frequencies, hide_all_plans, set_dollar, set_euro, show_active_currency, show_active_frequency, show_selected_plans, toggle_currency, toggle_frequency;
+  console.log('test');
+  current_currency = in_euro_zone(navigator.language) ? 'EUR' : 'USD';
+  current_frequency = 'y';
+  hide_all_plans = function() {
+    return $('.plan.EUR, .plan.USD').not('.free').hide();
+  };
+  show_selected_plans = function() {
+    var combined_selector;
+    hide_all_plans();
+    combined_selector = $(".plan." + current_currency + "." + current_frequency);
+    return combined_selector.show();
+  };
+  show_selected_plans();
+  toggle_currency = function() {
+    if (current_currency === 'EUR') {
+      current_currency = 'USD';
+    } else {
+      current_currency = 'EUR';
+    }
+    return show_selected_plans();
+  };
+  set_dollar = function() {
+    current_currency = 'USD';
+    return show_selected_plans();
+  };
+  set_euro = function() {
+    current_currency = 'EUR';
+    return show_selected_plans();
+  };
+  hide_all_currencies = function() {
+    return $('.switch-currency').find('.EUR, .USD').hide();
+  };
+  show_active_currency = function() {
+    hide_all_currencies();
+    return $(".switch-currency ." + current_currency).show();
+  };
+  show_active_currency();
+  $('.switch-currency').on('click', function() {
+    toggle_currency();
+    return show_active_currency();
+  });
+  toggle_frequency = function() {
+    if (current_frequency === 'y') {
+      current_frequency = 'm';
+    } else {
+      current_frequency = 'y';
+    }
+    return show_selected_plans();
+  };
+  hide_all_frequencies = function() {
+    return $('.switch-frequency').find('.y, .m').hide();
+  };
+  show_active_frequency = function() {
+    hide_all_frequencies();
+    return $(".switch-frequency ." + current_frequency).show();
+  };
+  show_active_frequency();
+  return $('.switch-frequency').on('click', function() {
+    toggle_frequency();
+    return show_active_frequency();
+  });
+});
 
 });
 
