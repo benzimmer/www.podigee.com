@@ -1,60 +1,60 @@
 ---
 de:
-  - name: Nicolas Semak
-    podcast_cover: /testimonials/viertausendhertz.jpg
-    podcast_name: Viertausendhertz
-    podcast_url: http://viertausendhertz.de/
-    text: "<p>Wir haben seit wir dort sind sehr viel weniger Sorgen</p>"
-  - name: Michael Hein
-    podcast_cover: /testimonials/vds-millernton-nds.png
-    podcast_name: "#VdS Millernton #NdS"
-    podcast_url: http://fcsp.hamburg
-    text: "<p>Ich bin gestern live gegangen und hatte fantastisches Feedback zu der
-      neuen Seite. <strong>Danke auch noch mal an Podigee für den großartigen Support.</strong></p>"
-  - name: Dirk Breuer
-    podcast_cover: /testimonials/nerdkunde.jpg
-    podcast_name: Nerdkunde
-    podcast_url: http://nerdkunde.de
-    text: "<p>Zunächst einmal ein sehr großes Lob und eine Menge Respekt. <strong>Das
-     nenne ich mal Service. Vielen dank dafür!</strong></p>"
-  - name: Jérôme Brunelle
-    podcast_cover: /testimonials/kwerfunk.jpg
-    podcast_name: Kwerfunk
-    podcast_url: http://kwerfunk.eu
-    text: "<p>Ich möchte mich an dieser Stelle ganz besonders bei Ben von Podigee bedanken!
-     Er hat mir jetzt zwei Tage lang geholfen, den Podcast zu migrieren! Solltet ihr
-     selbst einen Podcast machen wollen, so kann ich euch diese Firma wärmstens empfehlen!
-     <strong>Besseren Service könnt ihr nicht bekommen!</strong></p>"
+- name: Nicolas Semak
+  podcast_cover: "/testimonials/viertausendhertz.jpg"
+  podcast_name: Viertausendhertz
+  podcast_url: http://viertausendhertz.de/
+  text: "<p>Wir haben seit wir dort sind sehr viel weniger Sorgen</p>"
+- name: Michael Hein
+  podcast_cover: "/testimonials/vds-millernton-nds.png"
+  podcast_name: "#VdS Millernton #NdS"
+  podcast_url: http://fcsp.hamburg
+  text: "<p>Ich bin gestern live gegangen und hatte fantastisches Feedback zu der
+    neuen Seite. <strong>Danke auch noch mal an Podigee für den großartigen Support.</strong></p>"
+- name: Dirk Breuer
+  podcast_cover: "/testimonials/nerdkunde.jpg"
+  podcast_name: Nerdkunde
+  podcast_url: http://nerdkunde.de
+  text: "<p>Zunächst einmal ein sehr großes Lob und eine Menge Respekt. <strong>Das
+    nenne ich mal Service. Vielen dank dafür!</strong></p>"
+- name: Jérôme Brunelle
+  podcast_cover: "/testimonials/kwerfunk.jpg"
+  podcast_name: Kwerfunk
+  podcast_url: http://kwerfunk.eu
+  text: "<p>Ich möchte mich an dieser Stelle ganz besonders bei Ben von Podigee bedanken!
+    Er hat mir jetzt zwei Tage lang geholfen, den Podcast zu migrieren! Solltet ihr
+    selbst einen Podcast machen wollen, so kann ich euch diese Firma wärmstens empfehlen!
+    <strong>Besseren Service könnt ihr nicht bekommen!</strong></p>"
 en:
-  - name: Caine Dorr
-    podcast_cover: /testimonials/adventure-frequency-podcast-network.png
-    podcast_name: Adventure Frequency Podcast Network
-    podcast_url: http://adventurefrequency.network.podigee.io
-    text: "<p>Thank you so much for treating me so so well! <strong>I have nothing
-     but great things to say about Podigee.</strong></p>"
-  - name: Dirk Breuer
-    podcast_cover: /testimonials/nerdkunde.jpg
-    podcast_name: Nerdkunde
-    podcast_url: http://nerdkunde.de
-    text: "<p>First of all, a praise and a lot of respect. <strong>That&#39;s what
-     I call service. Thank you!</strong></p>"
-  - name: Andrew Tertes
-    podcast_cover: /testimonials/one-way-or-jewish-questions-musings.jpg
-    podcast_name: One Way Or ... Jewish Questions & Musings
-    podcast_url: http://onewayor.com
-    text: "<p>I&#39;m amazed to think that in our first half year, we&#39;re about
-     to hit 10,000 downloads. Each episode has been a joy to make, and <strong>Podigee
-     makes it so easy</strong>, including streaming to iTunes.</p>"
-  - name: Aaron Olson
-    podcast_cover: /testimonials/3fu3l.jpg
-    podcast_name: 3fu3l
-    podcast_url: https://3fu3l.podigee.io/
-    text: "<p><strong>Podigee provides massive value</strong> to our listeners through
-      their amazing web player, which allows for chapter marks, images, and links to
-      show content. The ability to jump to different sections of audio gives listeners
-      the option to hear the content they are interested in without having to listen
-      to an entire show. Integration with Auphonic <strong>helps us produce great sounding
-      audio</strong>, and reduce our workflow so we can <strong>focus on producing</strong>
-      more content. In addition, their markdown editor makes creating show notes a breeze.
-      They also provide <strong>amazing customer service</strong> with fast responses
-      whenever we need help with something on our end.</p>"
+- name: Caine Dorr
+  podcast_cover: "/testimonials/adventure-frequency-podcast-network.png"
+  podcast_name: Adventure Frequency Podcast Network
+  podcast_url: http://adventurefrequency.network.podigee.io
+  text: "<p>Thank you so much for treating me so so well! <strong>I have nothing but
+    great things to say about Podigee.</strong></p>"
+- name: Dirk Breuer
+  podcast_cover: "/testimonials/nerdkunde.jpg"
+  podcast_name: Nerdkunde
+  podcast_url: http://nerdkunde.de
+  text: "<p>First of all, a praise and a lot of respect. <strong>That&#39;s what I
+    call service. Thank you!</strong></p>"
+- name: Andrew Tertes
+  podcast_cover: "/testimonials/one-way-or-jewish-questions-musings.jpg"
+  podcast_name: One Way Or ... Jewish Questions & Musings
+  podcast_url: http://onewayor.com
+  text: "<p>I&#39;m amazed to think that in our first half year, we&#39;re about to
+    hit 10,000 downloads. Each episode has been a joy to make, and <strong>Podigee
+    makes it so easy</strong>, including streaming to iTunes.</p>"
+- name: Aaron Olson
+  podcast_cover: "/testimonials/3fu3l.jpg"
+  podcast_name: 3fu3l
+  podcast_url: https://3fu3l.podigee.io/
+  text: "<p><strong>Podigee provides massive value</strong> to our listeners through
+    their amazing web player, which allows for chapter marks, images, and links to
+    show content. The ability to jump to different sections of audio gives listeners
+    the option to hear the content they are interested in without having to listen
+    to an entire show. Integration with Auphonic <strong>helps us produce great sounding
+    audio</strong>, and reduce our workflow so we can <strong>focus on producing</strong>
+    more content. In addition, their markdown editor makes creating show notes a breeze.
+    They also provide <strong>amazing customer service</strong> with fast responses
+    whenever we need help with something on our end.</p>"

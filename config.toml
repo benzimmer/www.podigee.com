@@ -1,29 +1,17 @@
-metaDataFormat = "yaml"
-baseURL = "https://www.podigee.com/"
 DefaultContentLanguage = "en"
+baseURL = "https://www.podigee.com/"
 defaultContentLanguageInSubdir = true
+metaDataFormat = "yaml"
 theme = "podigee"
-
-[params]
-  page_title = "Podigee Podcast Hosting"
-  description = "Podigee is awesome"
-  authors = "Podigee"
-  keywords = [
-    "podcast",
-    "hosting",
-    "publishing",
-    "podigee",
-    "transcription",
-    "podcasting",
-    "webplayer"
-  ]
-  register_link = "https://app.podigee.com/register"
-  login_link = "https://app.podigee.com/"
-  analytics_key = "gBLJbe7dK7pkedcxKH2WM0yilNDxCZPN"
-
-[Languages]
-[Languages.en]
-title = "Podigee Podcast Hosting"
-
 [Languages.de]
 title = "Podigee Podcast Hosting"
+[Languages.en]
+title = "Podigee Podcast Hosting"
+[params]
+analytics_key = "gBLJbe7dK7pkedcxKH2WM0yilNDxCZPN"
+authors = "Podigee"
+description = "Podigee is awesome"
+keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "podcasting", "webplayer"]
+login_link = "https://app.podigee.com/"
+page_title = "Podigee Podcast Hosting"
+register_link = "https://app.podigee.com/register"

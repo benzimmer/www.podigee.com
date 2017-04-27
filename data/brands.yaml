@@ -1,27 +1,27 @@
+---
 hosting:
   color: blue
   name: Podcast Hosting
-  homelink: /
+  homelink: "/"
   navigation:
-    - title: home
-      href: '/'
-    - title: plans
-      href: '/plans'
-    - title: features
-      href: '/features'
-    - title: blog
-      href: '/blog'
-    - title: more
-      navigation:
-        - title: podcast_player
-          href: '/podcast-player/'
-        - divider: true
-        - title: help
-          href: '/help/'
-        - title: changelog
-          href: '/changelog/'
-
+  - title: home
+    href: "/"
+  - title: plans
+    href: "/plans"
+  - title: features
+    href: "/features"
+  - title: blog
+    href: "/blog"
+  - title: more
+    navigation:
+    - title: podcast_player
+      href: "/podcast-player/"
+    - divider: true
+    - title: help
+      href: "/help/"
+    - title: changelog
+      href: "/changelog/"
 player:
   color: yellow
   name: Podcast Player
-  homelink: /podcast-player/
+  homelink: "/podcast-player/"
