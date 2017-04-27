@@ -1,5 +1,4 @@
 DefaultContentLanguage = "en"
-baseURL = "https://www.podigee.com/"
 defaultContentLanguageInSubdir = true
 metaDataFormat = "yaml"
 theme = "podigee"
