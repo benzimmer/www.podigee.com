@@ -22,8 +22,12 @@ Thumbs.db
 # NPM packages folder.
 node_modules/
 
-# Brunch output folder.
+# Hugo ouput folder
 public/
+
+# Brunch output folders
+themes/podigee/static/css
+themes/podigee/static/js
 
 # Import script
 import_content.rb
