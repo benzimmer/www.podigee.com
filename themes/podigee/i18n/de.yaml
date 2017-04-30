@@ -36,6 +36,8 @@
   translation: Neueste Posts
 - id: latest_entries
   translation: Neueste Einträge
+- id: other_entries
+  translation: Weitere Einträge
 - id: published_by
   translation: von
 - id: published_on

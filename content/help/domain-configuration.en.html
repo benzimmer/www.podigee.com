@@ -1,0 +1,84 @@
+---
+title: Domain configuration
+keywords: 
+  - 
+aliases: ["/docs/domain-configuration"]
+---
+<div class="content">
+<p>Here we will show you how to configure a Podigee subdomain or your own domain name for your blog.</p>
+
+<h2>Use a subdomain of podigee.io</h2>
+
+<p>To get started quickly or if you don't want to register your own domain name you can use a subdomain provided by us which looks something like this:</p>
+
+<pre>http://awesome.podigee.io</pre>
+
+<p>The part between http:// and .podigee.io can be configured by you in the podcast settings.</p>
+
+<p>To do this go to the <a href="https://www.podigee.com/podcasts">podcast overview page</a> and click on the name of the podcast you want to edit.</p>
+
+<p>Then go to the Blog-Tab and select all the text in the Name (subdomain) field and enter your desired subdomain name. Just click outside of the field to save the setting.</p>
+
+<p class="block-img"><img src="/help/podcast-domain-1.jpg" alt="podcast-domain-1" width="1420" height="306"></p>
+
+<p>This can be any combination of letters, numbers and dashes. Any other kind of special characters will not be allowed. So <em>my-awesome-podcast</em> is OK while <em>my.awesome.podcast</em> is not because it contains dots. When you're finished, click Save and enjoy using your new (sub)domain.</p>
+
+<h2>Use your own domain</h2>
+
+<p>If you would like to use your own domain name you can also do that.</p>
+
+<h3>Domain types</h3>
+
+<p>There are two possible domain configurations available to your podcast including:</p>
+
+<p>A subdomain like <em>www.example.com</em><br>A root domain like <em>example.com</em></p>
+
+<p>To add them you need to follow a simple two step process:</p>
+
+<ol>
+<li>Tell Podigee which domain you would like to use</li>
+<li>Configure your domain's DNS to point to Podigee</li>
+</ol>
+
+<p>Find specific instructions for each domain configuration below.</p>
+
+<h3>Adding a subdomain of your domain</h3>
+
+<p>If you entered a subdomain (like <em>www.example.com</em>) you need to go to the provider where you registered your domain (or your DNS provider) and create a CNAME record for that domain pointing to your subdomain. For example, if your domain name is <em>www.example.com</em> and your Podigee subdomain is <em>example.podigee.io</em> this is how the record should look like:</p>
+
+<p><strong>Record type:</strong> CNAME<strong><br>Entry:</strong> www<br><strong>Target:</strong> example.podigee.com.</p>
+
+<p>Once you have done this you can move on the the section labeled <strong>Configure the domain in Podigee</strong> below.</p>
+
+<h3>Adding a root domain</h3>
+
+<p>Adding a root domain like example.com is unfortunately not possible with every Domain/DNS provider. Here are two providers that support it:</p>
+
+<p><a href="http://support.dnsimple.com/articles/alias-record">DNSimple</a> (ALIAS record)<br><a href="http://www.dnsmadeeasy.com/technology/aname-records/">DNS Made Easy</a> (ANAME record)</p>
+
+<p><strong>Record type:</strong> ALIAS or ANAME<br><strong>Entry:</strong> &lt;empty&gt; or @<br><strong>Target:</strong> example.podigee.com.</p>
+
+<p>If your provider does not support this you need to use a subdomain instead (like <em>www.example.com</em>). Our recommendation in that case would be to redirect your root domain to the subdomain you decide to use.</p>
+
+<p>Once you have done this move the the section labeled <strong>Configure the domain in Podigee</strong> below.</p>
+
+<h3>Configure the domain in Podigee</h3>
+
+<p>Before you can add the domain to your podcast configuration on Podigee, please wait until it has been promoted to the majority of DNS servers. You can check this by typing the domain into your browser. If you see a message like the one below you are good to go. If not, you need to wait a bit longer.</p>
+
+<pre>There is no app configured at that hostname.<br>Perhaps the app owner has renamed it, or you mistyped the URL.</pre>
+
+<p>To add the domain to your podcast go to <a href="https://www.podigee.com/podcasts">podcast overview page</a> and click on the name of the podcast you want to use the domain with.</p>
+
+<p>Then go to the Blog-Tab and enter your domain name into the Domain field. Just click outside of the field to save the setting.</p>
+
+<p class="block-img"><img src="/help/podcast-domain-2.jpg" alt="podcast-domain-2" width="1420" height="303"></p>
+
+<p>After that you should see your podcast page when you visit the domain with your browser.</p>
+
+<p><em>Please note that if you set a domain for your podcast all requests to its subdomain will be redirected to the domain entered into the configuration. This is necessary for search engines to only find one unique copy of your content on the internet. You can find more on the topic of duplicate content in Googles Webmaster Tools Documentation.</em></p>
+
+<h2>Need help?</h2>
+
+<p>If you need any help setting up your domains, please write us an email to hello@podigee.com with the name of your domain-provider and we'll try to help you as soon as we can.</p>
+</div>
