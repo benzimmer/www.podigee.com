@@ -7,11 +7,11 @@ hosting:
   - title: home
     href: "/"
   - title: plans
-    href: "/plans"
+    href: "/plans/"
   - title: features
-    href: "/features"
+    href: "/features/"
   - title: blog
-    href: "/blog"
+    href: "/blog/"
   - title: more
     navigation:
     - title: podcast_player
