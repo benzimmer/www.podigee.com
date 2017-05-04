@@ -13,5 +13,4 @@ authors = "Podigee"
 description = "Podigee is awesome"
 keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "podcasting", "webplayer"]
 login_link = "https://app.podigee.com/"
-page_title = "Podigee Podcast Hosting"
 register_link = "https://app.podigee.com/register"
