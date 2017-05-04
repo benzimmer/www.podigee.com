@@ -19,8 +19,6 @@ hosting:
     - divider: true
     - title: help
       href: http://docs.podigee.com
-    - title: changelog
-      href: "/changelog/"
 player:
   color: yellow
   name: Podcast Player
