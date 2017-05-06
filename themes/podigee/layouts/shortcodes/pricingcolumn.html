@@ -1,0 +1,29 @@
+<article class='EUR col-lg-3 col-sm-6 col-xs-12 plan pricing-column'>
+  <div class='inner-box'>
+    <div class='plan-header text-center'>
+      <h3 class='plan-title'>{{ .Get "name" }}</h3>
+      <h2 class='plan-price m'>{{ .Get "price_eur_monthly" }}€</h2>
+      <h2 class='plan-price y'>{{ .Get "price_eur_yearly" }}€</h2>
+      <div class='plan-duration m'>{{ i18n "per_month" }}</div>
+      <div class='plan-duration y'>{{ i18n "per_year" }} (~<span class="yearly-month-price"></span>€ {{ i18n "per_month" }})</div>
+    </div>
+    <ul class='plan-stats list-unstyled text-center'>
+      {{ .Inner }}
+    </ul>
+  </div>
+</article>
+
+<article class='USD col-lg-3 col-sm-6 col-xs-12 plan pricing-column'>
+  <div class='inner-box'>
+    <div class='plan-header text-center'>
+      <h3 class='plan-title'>{{ .Get "name" }}</h3>
+      <h2 class='plan-price m'>${{ .Get "price_usd_monthly" }}</h2>
+      <h2 class='plan-price y'>${{ .Get "price_usd_yearly" }}</h2>
+      <div class='plan-duration m'>{{ i18n "per_month" }}</div>
+      <div class='plan-duration y'>{{ i18n "per_year" }} (~$<span class="yearly-month-price"></span> {{ i18n "per_month" }})</div>
+    </div>
+    <ul class='plan-stats list-unstyled text-center'>
+      {{ .Inner }}
+    </ul>
+  </div>
+</article>

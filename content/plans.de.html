@@ -26,248 +26,109 @@ type: page
 
 <section class='section' id='pricing'>
   <div class='container'>
+    {{< pricingtablebuttons >}}
+
     <div class='row'>
-      <div class='switch-currency text-center col-xs-12'>
-        <button class='btn btn-inverse btn-bordered navbar-btn EUR'>
-          Preise in $ anzeigen
-        </button>
-        <button class='btn btn-inverse btn-bordered navbar-btn USD'>
-          Preise in € anzeigen
-        </button>
-      </div>
+      {{< pricingcolumn name="Bedroom" price_eur_yearly="22" price_usd_yearly="33" price_eur_monthly="2" price_usd_monthly="3" >}}
+        <li>
+          <strong>Basic</strong> Statistiken
+        </li>
+        <li>
+          <strong>Basic</strong> Themes
+        </li>
+        <li>
+          <strong>2</strong> Stunden Audio Encoding
+        </li>
+        <li>
+            <strong>72</strong> Stunden Antwortzeit
+          </span>
+        </li>
+      {{< /pricingcolumn >}}
+
+      {{< pricingcolumn name="Garage" price_eur_yearly="110" price_usd_yearly="132" price_eur_monthly="10" price_usd_monthly="12" >}}
+        <li>
+          alles aus <strong>Bedroom</strong> +
+        </li>
+        <li>
+          Nutze deine eigene Domain
+        </li>
+        <li>
+          Nutze deine eigene Website
+        </li>
+        <li>
+          Eigene Web Player Themes
+        </li>
+        <li>
+          Zugang zu automatischen Transkripten
+        </li>
+        <li>
+          Multitrack Upload
+        </li>
+        <li>
+          <strong>4</strong> Stunden Audio Encoding
+        </li>
+        <li>
+            <strong>48</strong> Stunden Antwortzeit
+          </span>
+        </li>
+      {{< /pricingcolumn >}}
+
+      {{< pricingcolumn name="Indie" price_eur_yearly="275" price_usd_yearly="330" price_eur_monthly="25" price_usd_monthly="30" >}}
+        <li>
+          alles aus <strong>Garage</strong> +
+        </li>
+        <li>
+          <strong>Advanced</strong> Statistiken <small>(bald verfügbar)</small>
+        </li>
+        <li>
+          Wähle aus höheren Audio Qualitäten
+        </li>
+        <li>
+          <strong>Advanced</strong> Themes <small>(bald verfügbar)</small>
+        </li>
+        <li>
+          Unbegrenzte Anzahl Collaborators
+        </li>
+        <li>
+          Erstelle Podcast Netzwerke
+        </li>
+        <li>
+          <strong>10</strong> Stunden Audio Encoding
+        </li>
+        <li>
+          <strong>24</strong> Stunden Antwortzeit
+        </li>
+      {{< /pricingcolumn >}}
+
+
+      {{< pricingcolumn name="Rockstar" price_eur_yearly="550" price_usd_yearly="660" price_eur_monthly="50" price_usd_monthly="60" >}}
+        <li>
+          alles aus <strong>Indie</strong> +
+        </li>
+        <li>
+          <strong>Professional</strong> Statistiken
+        </li>
+        <li>
+          Anpassbare Audio-Verbesserung
+        </li>
+        <li>
+          <strong>30</strong> Stunden Audio Encoding
+        </li>
+        <li>
+          <strong>12</strong> Stunden Antwortzeit
+        </li>
+      {{< /pricingcolumn >}}
     </div>
-    <div class='row'>
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 free m plan pricing-column'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Bedroom</h3>
-            <h2 class='plan-price'>Free</h2>
-            <div class='free-placeholder'></div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>1</strong>
-              Stunde Audio / Monat
-            </li>
-            <li>
-              <strong>Basis</strong> Statistiken
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Garantierte Antwortzeit' data-rel='tooltip'>
-                <strong>72</strong>
-                Stunden E-Mail Support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Garage</h3>
-            <h2 class='plan-price'>8€</h2>
-            <div class='plan-duration'>
-              pro Monat
-              bei jährlicher Zahlung, oder
-            </div>
-            <div class='monthly-payment'>
-              <strong>10€</strong>
-              bei monatlicher Zahlung
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>2</strong>
-              Stunden Audio / Monat
-            </li>
-            <li>
-              <strong>Fortgeschrittene</strong> Statistiken
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Garantierte Antwortzeit' data-rel='tooltip'>
-                <strong>48</strong>
-                Stunden E-Mail Support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Indie</h3>
-            <h2 class='plan-price'>18€</h2>
-            <div class='plan-duration'>
-              pro Monat
-              bei jährlicher Zahlung, oder
-            </div>
-            <div class='monthly-payment'>
-              <strong>20€</strong>
-              bei monatlicher Zahlung
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>8</strong>
-              Stunden Audio / Monat
-            </li>
-            <li>
-              <strong>Fortgeschrittene</strong> Statistiken
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Garantierte Antwortzeit' data-rel='tooltip'>
-                <strong>24</strong>
-                Stunden E-Mail Support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-          <div class='popular-plan'>
-            Unser beliebtester Plan
-          </div>
-        </div>
-      </article>
-
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Rockstar</h3>
-            <h2 class='plan-price'>30€</h2>
-            <div class='plan-duration'>
-              pro Monat
-              bei jährlicher Zahlung, oder
-            </div>
-            <div class='monthly-payment'>
-              <strong>32€</strong>
-              bei monatlicher Zahlung
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>16</strong>
-              Stunden Audio / Monat
-            </li>
-            <li>
-              <strong>Fortgeschrittene</strong> Statistiken
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Garantierte Antwortzeit' data-rel='tooltip'>
-                <strong>12</strong>
-                Stunden E-Mail Support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class='USD col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Garage</h3>
-            <h2 class='plan-price'>$10</h2>
-            <div class='plan-duration'>
-              pro Monat
-              bei jährlicher Zahlung, oder
-            </div>
-            <div class='monthly-payment'>
-              <strong>$12</strong>
-              bei monatlicher Zahlung
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>2</strong>
-              Stunden Audio / Monat
-            </li>
-            <li>
-              <strong>Fortgeschrittene</strong> Statistiken
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Garantierte Antwortzeit' data-rel='tooltip'>
-                <strong>48</strong>
-                Stunden E-Mail Support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class='USD col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Indie</h3>
-            <h2 class='plan-price'>$22</h2>
-            <div class='plan-duration'>
-              pro Monat
-              bei jährlicher Zahlung, oder
-            </div>
-            <div class='monthly-payment'>
-              <strong>$24</strong>
-              bei monatlicher Zahlung
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>8</strong>
-              Stunden Audio / Monat
-            </li>
-            <li>
-              <strong>Fortgeschrittene</strong> Statistiken
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Garantierte Antwortzeit' data-rel='tooltip'>
-                <strong>24</strong>
-                Stunden E-Mail Support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-          <div class='popular-plan'>
-            Unser beliebtester Plan
-          </div>
-        </div>
-      </article>
-
-      <article class='USD col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Rockstar</h3>
-            <h2 class='plan-price'>$38</h2>
-            <div class='plan-duration'>
-              pro Monat
-              bei jährlicher Zahlung, oder
-            </div>
-            <div class='monthly-payment'>
-              <strong>$40</strong>
-              bei monatlicher Zahlung
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>16</strong>
-              Stunden Audio / Monat
-            </li>
-            <li>
-              <strong>Fortgeschrittene</strong> Statistiken
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Garantierte Antwortzeit' data-rel='tooltip'>
-                <strong>12</strong>
-                Stunden E-Mail Support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
 
     </div>
     <div class='row'>
       <div class='sign-up text-center col-xs-12'>
         <a class='btn btn-lg btn-primary btn-shadow w-md btn-rounded' href='{{< registerlink >}}'>
-          Erstelle jetzt dein kostenloses Konto
+          Starte jetzt deine 14 tägige Testphase!
         </a>
       </div>
     </div>
+
     <div class='row'>
       <article class='pricing-column enterprise-contact col-xs-12'>
         <div class='inner-box'>
