@@ -10,6 +10,11 @@
     <ul class='plan-stats list-unstyled text-center'>
       {{ .Inner }}
     </ul>
+    {{ if eq (.Get "name") "Indie" }}
+      <div class="popular-plan">
+        {{ i18n "popular_plan" }}
+      </div>
+    {{ end }}
   </div>
 </article>
 
@@ -25,5 +30,10 @@
     <ul class='plan-stats list-unstyled text-center'>
       {{ .Inner }}
     </ul>
+    {{ if eq (.Get "name") "Indie" }}
+      <div class="popular-plan">
+        {{ i18n "popular_plan" }}
+      </div>
+    {{ end }}
   </div>
 </article>

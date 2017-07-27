@@ -56,3 +56,5 @@
   translation: Save with yearly payment
 - id: pay_monthly
   translation: Pay monthly
+- id: popular_plan
+  translation: Our most popular plan
