@@ -4,6 +4,8 @@
   translation: Angebote
 - id: features
   translation: Features
+- id: pro_services
+  translation: Pro Services
 - id: blog
   translation: Blog
 - id: more
