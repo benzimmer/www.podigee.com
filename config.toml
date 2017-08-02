@@ -5,13 +5,15 @@ metaDataFormat = "yaml"
 theme = "podigee"
 [Languages.de]
 title = "Podigee Podcast Hosting"
+login_link = "https://app.podigee.com/de/login"
+register_link = "https://app.podigee.com/de/register"
 [Languages.en]
 title = "Podigee Podcast Hosting"
+login_link = "https://app.podigee.com/en/login"
+register_link = "https://app.podigee.com/en/register"
 [params]
 analytics_key = "gBLJbe7dK7pkedcxKH2WM0yilNDxCZPN"
 authors = "Podigee"
 description = "Podigee is awesome"
 keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "podcasting", "webplayer"]
-login_link = "https://app.podigee.com/"
 page_title = "Podigee Podcast Hosting"
-register_link = "https://app.podigee.com/register"
