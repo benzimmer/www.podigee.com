@@ -12,7 +12,7 @@ type: page
       <div class='col-sm-12'>
         <div class='home-wrapper text-center'>
           <h2 class='animated fadeInDown wow' data-wow-delay='.1s'>
-            Get started for free or go pro with one of our paid plans
+            Try Podigee free for 14 days
           </h2>
           <p class='animated fadeInDown wow' data-wow-delay='.2s'>
           Check out our affordable pricing
@@ -26,245 +26,104 @@ type: page
 
 <section class='section' id='pricing'>
   <div class='container'>
+    {{< pricingtablebuttons >}}
+
     <div class='row'>
-      <div class='switch-currency text-center col-xs-12'>
-        <button class='btn btn-inverse btn-bordered navbar-btn EUR'>
-          Show prices in $
-        </button>
-        <button class='btn btn-inverse btn-bordered navbar-btn USD'>
-          Show prices in €
-        </button>
-      </div>
+      {{< pricingcolumn name="Bedroom" price_eur_yearly="22" price_usd_yearly="33" price_eur_monthly="2" price_usd_monthly="3" >}}
+        <li>
+          <strong>Basic</strong> statistics
+        </li>
+        <li>
+          <strong>Basic</strong> themes
+        </li>
+        <li>
+          <strong>2</strong> hours of audio encoding
+        </li>
+        <li>
+            <strong>72</strong> hour response time
+          </span>
+        </li>
+      {{< /pricingcolumn >}}
+
+      {{< pricingcolumn name="Garage" price_eur_yearly="110" price_usd_yearly="132" price_eur_monthly="10" price_usd_monthly="12" >}}
+        <li>
+          everything from <strong>Bedroom</strong> +
+        </li>
+        <li>
+          Bring your own domain
+        </li>
+        <li>
+          Use your own website
+        </li>
+        <li>
+          Custom web player themes
+        </li>
+        <li>
+          <a href="/en/features/automatic-transcription/" title="Podigee automatic podcast transcription">Automated transcripts</a> <br><small>($0.12/0,10€ per minute)</small>
+        </li>
+        <li>
+          Multitrack upload
+        </li>
+        <li>
+          <strong>4</strong> hours of audio encoding
+        </li>
+        <li>
+            <strong>48</strong> hour response time
+          </span>
+        </li>
+      {{< /pricingcolumn >}}
+
+      {{< pricingcolumn name="Indie" price_eur_yearly="275" price_usd_yearly="330" price_eur_monthly="25" price_usd_monthly="30" >}}
+        <li>
+          everything from <strong>Garage</strong> +
+        </li>
+        <li>
+          <strong>Advanced</strong> statistics <br><small>(coming soon)</small>
+        </li>
+        <li>
+          Choose higher audio qualities
+        </li>
+        <li>
+          <strong>Advanced</strong> themes <br><small>(coming soon)</small>
+        </li>
+        <li>
+          Unlimited collaborators
+        </li>
+        <li>
+          Create podcast networks
+        </li>
+        <li>
+          <strong>10</strong> hours of audio encoding
+        </li>
+        <li>
+          <strong>24</strong> hour response time
+        </li>
+      {{< /pricingcolumn >}}
+
+
+      {{< pricingcolumn name="Rockstar" price_eur_yearly="550" price_usd_yearly="660" price_eur_monthly="50" price_usd_monthly="60" >}}
+        <li>
+          everything from <strong>Indie</strong> +
+        </li>
+        <li>
+          <strong>Professional</strong> statistics
+        </li>
+        <li>
+          Customizable audio improvement
+        </li>
+        <li>
+          <strong>30</strong> hours of audio encoding
+        </li>
+        <li>
+          <strong>12</strong> hour response time
+        </li>
+      {{< /pricingcolumn >}}
     </div>
-    <div class='row'>
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 free m plan pricing-column'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Bedroom</h3>
-            <h2 class='plan-price'>Free</h2>
-            <div class='free-placeholder'></div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>1</strong>
-              hour of audio / month
-            </li>
-            <li>
-              <strong>Basic</strong> statistics
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Guaranteed response time' data-rel='tooltip'>
-                <strong>72</strong>
-                hour email support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
 
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Garage</h3>
-            <h2 class='plan-price'>8€</h2>
-            <div class='plan-duration'>
-              per month
-              billed annually, or
-            </div>
-            <div class='monthly-payment'>
-              <strong>10€</strong>
-              month-to-month
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>2</strong>
-              hours of audio / month
-            </li>
-            <li>
-              <strong>Advanced</strong> statistics
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Guaranteed response time' data-rel='tooltip'>
-                <strong>48</strong>
-                hour email support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Indie</h3>
-            <h2 class='plan-price'>18€</h2>
-            <div class='plan-duration'>
-              per month
-              billed annually, or
-            </div>
-            <div class='monthly-payment'>
-              <strong>20€</strong>
-              month-to-month
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>8</strong>
-              hours of audio / month
-            </li>
-            <li>
-              <strong>Advanced</strong> statistics
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Guaranteed response time' data-rel='tooltip'>
-                <strong>24</strong>
-                hour email support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-          <div class='popular-plan'>
-            Our most popular plan
-          </div>
-        </div>
-      </article>
-
-      <article class='EUR col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Rockstar</h3>
-            <h2 class='plan-price'>30€</h2>
-            <div class='plan-duration'>
-              per month
-              billed annually, or
-            </div>
-            <div class='monthly-payment'>
-              <strong>32€</strong>
-              month-to-month
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>16</strong>
-              hours of audio / month
-            </li>
-            <li>
-              <strong>Advanced</strong> statistics
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Guaranteed response time' data-rel='tooltip'>
-                <strong>12</strong>
-                hour email support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class='USD col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Garage</h3>
-            <h2 class='plan-price'>$10</h2>
-            <div class='plan-duration'>
-              per month
-              billed annually, or
-            </div>
-            <div class='monthly-payment'>
-              <strong>$12</strong>
-              month-to-month
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>2</strong>
-              hours of audio / month
-            </li>
-            <li>
-              <strong>Advanced</strong> statistics
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Guaranteed response time' data-rel='tooltip'>
-                <strong>48</strong>
-                hour email support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class='USD col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Indie</h3>
-            <h2 class='plan-price'>$22</h2>
-            <div class='plan-duration'>
-              per month
-              billed annually, or
-            </div>
-            <div class='monthly-payment'>
-              <strong>$24</strong>
-              month-to-month
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>8</strong>
-              hours of audio / month
-            </li>
-            <li>
-              <strong>Advanced</strong> statistics
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Guaranteed response time' data-rel='tooltip'>
-                <strong>24</strong>
-                hour email support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-          <div class='popular-plan'>
-            Our most popular plan
-          </div>
-        </div>
-      </article>
-
-      <article class='USD col-lg-3 col-sm-6 col-xs-12 plan pricing-column y'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Rockstar</h3>
-            <h2 class='plan-price'>$38</h2>
-            <div class='plan-duration'>
-              per month
-              billed annually, or
-            </div>
-            <div class='monthly-payment'>
-              <strong>$40</strong>
-              month-to-month
-            </div>
-          </div>
-          <ul class='plan-stats list-unstyled text-center'>
-            <li>
-              <strong>16</strong>
-              hours of audio / month
-            </li>
-            <li>
-              <strong>Advanced</strong> statistics
-            </li>
-            <li>
-              <span class='tooltip-inverse' data-original-title='Guaranteed response time' data-rel='tooltip'>
-                <strong>12</strong>
-                hour email support <i class='icon-info-sign'></i>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </article>
-
-    </div>
     <div class='row'>
       <div class='sign-up text-center col-xs-12'>
         <a class='btn btn-lg btn-primary btn-shadow w-md btn-rounded' href='{{< registerlink >}}'>
-          Create your free account now
+          Start your 14 day trial now!
         </a>
       </div>
     </div>
@@ -359,7 +218,7 @@ type: page
       <div class='col-md-5'>
         <div class='question-q-box'>Q.</div>
         <div class='animated fadeInLeft wow animated' data-wow-delay='.1s' style='visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;'>
-          <h4 class='question' data-wow-delay='.1s'>How are &quot;hours of audio&quot; calculated?</h4>
+          <h4 class='question' data-wow-delay='.1s'>How are &quot;hours of audio encoding&quot; calculated?</h4>
           <p class='answer'>When you upload a file we look at it's length in minutes. After the file gets encoded this amount of minutes is subtracted from your monthly quota.</p>
         </div>
         <div class='question-q-box'>Q.</div>

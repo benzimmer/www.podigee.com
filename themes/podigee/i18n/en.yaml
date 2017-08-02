@@ -3,7 +3,11 @@
 - id: plans
   translation: Plans
 - id: features
-  translation: Features
+  translation: features
+- id: automatic_transcription
+  translation: Automatic Transcription
+- id: pro_services
+  translation: Pro Services
 - id: blog
   translation: Blog
 - id: more
@@ -44,3 +48,17 @@
   translation: published on
 - id: back_to_overview
   translation: Back to overview
+- id: per_month
+  translation: per month
+- id: per_year
+  translation: per year and have one month on us
+- id: prices_in_usd
+  translation: Show prices in US $
+- id: prices_in_eur
+  translation: Show prices in €
+- id: pay_yearly
+  translation: Save with yearly payment
+- id: pay_monthly
+  translation: Pay monthly
+- id: popular_plan
+  translation: Our most popular plan

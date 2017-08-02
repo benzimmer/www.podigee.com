@@ -10,6 +10,8 @@ hosting:
     href: "/plans/"
   - title: features
     href: "/features/"
+  - title: pro_services
+    href: "/pro-services/"
   - title: blog
     href: "/blog/"
   - title: more

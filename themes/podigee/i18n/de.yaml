@@ -4,6 +4,10 @@
   translation: Angebote
 - id: features
   translation: Features
+- id: automatic_transcription
+  translation: Automatische Transkription
+- id: pro_services
+  translation: Pro Services
 - id: blog
   translation: Blog
 - id: more
@@ -44,3 +48,17 @@
   translation: Veröffentlicht am
 - id: back_to_overview
   translation: Zurück zur Übersicht
+- id: per_month
+  translation: pro Monat
+- id: per_year
+  translation: pro Jahr und spare einen Monat
+- id: prices_in_usd
+  translation: Preise in US $
+- id: prices_in_eur
+  translation: Preise in €
+- id: pay_yearly
+  translation: Spare mit jährlicher Zahlung
+- id: pay_monthly
+  translation: Monatliche Zahlung
+- id: popular_plan
+  translation: Unser beliebtestes Paket

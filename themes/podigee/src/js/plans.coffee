@@ -1,21 +1,35 @@
 $ ->
-  console.log('test')
+  add_monthly_year_prices = ->
+    $('.plan').each ->
+      html = $(this).find('.plan-price.y').html()
+      yearly_string = html.replace('$', '')
+      yearly = parseInt(yearly_string, 10)
+      monthly = yearly/12
+      monthly = Math.round(monthly * 100) / 100
+      $(this).find('.yearly-month-price').text(monthly)
+
+  add_monthly_year_prices()
+
   current_currency =
     if in_euro_zone(navigator.language)
       'EUR'
     else
       'USD'
 
-  current_frequency = 'y'
+  current_frequency = 'm'
 
   hide_all_plans = ->
-    $('.plan.EUR, .plan.USD').not('.free').hide()
+    $('.plan.EUR, .plan.USD').hide()
+
+  hide_all_frequencies = ->
+    $('.plan .y, .plan .m').hide()
 
   show_selected_plans = ->
     hide_all_plans()
+    hide_all_frequencies()
 
-    combined_selector = $(".plan.#{current_currency}.#{current_frequency}")
-    combined_selector.show()
+    $(".plan.#{current_currency}").show()
+    $(".plan .#{current_frequency}").show()
 
   show_selected_plans()
 
@@ -56,11 +70,11 @@ $ ->
 
     show_selected_plans()
 
-  hide_all_frequencies = ->
+  hide_frequency_buttons = ->
     $('.switch-frequency').find('.y, .m').hide()
 
   show_active_frequency = ->
-    hide_all_frequencies()
+    hide_frequency_buttons()
     $(".switch-frequency .#{current_frequency}").show()
 
   show_active_frequency()
