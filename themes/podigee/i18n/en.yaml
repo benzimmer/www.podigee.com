@@ -3,7 +3,9 @@
 - id: plans
   translation: Plans
 - id: features
-  translation: Features
+  translation: features
+- id: automatic_transcription
+  translation: Automatic Transcription
 - id: pro_services
   translation: Pro Services
 - id: blog
