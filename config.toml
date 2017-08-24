@@ -14,6 +14,6 @@ register_link = "https://app.podigee.com/en/register"
 [params]
 analytics_key = "gBLJbe7dK7pkedcxKH2WM0yilNDxCZPN"
 authors = "Podigee"
-description = "Podigee is awesome"
-keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "podcasting", "webplayer"]
+description = "Podigee is a great hosting solution for your podcasts. We offer world-class human support and statistics."
+keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "transcripts", "podcasting", "webplayer"]
 page_title = "Podigee Podcast Hosting"
