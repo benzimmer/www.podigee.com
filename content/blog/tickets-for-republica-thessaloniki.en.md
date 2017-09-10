@@ -5,7 +5,7 @@ keywords:
 - conference
 - greece
 - thessaloniki
-description: We give away two free tickets to re:publica Thessaloniki from 11.09.2017 to 13.09.2017.
+description: We're giving away two free tickets to re:publica Thessaloniki from 11.09.2017 to 13.09.2017.
 date: '2017-09-10T00:00:00Z'
 image: "/blog/republica-thessaloniki.png"
 summary: We're media partner of re:publica Thessalniki and are giving away two free tickets to the event.
