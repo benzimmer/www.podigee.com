@@ -5,14 +5,14 @@ name = "Podigee"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
 description = ""
-homepage = "http://siteforthistheme.com/"
-tags = []
+homepage = "https://www.podigee.com"
+tags = ["Podcasts"]
 features = []
 min_version = "0.20"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Podigee UG"
+  homepage = "https://www.podigee.com"
 
 # If porting an existing theme
 [original]
