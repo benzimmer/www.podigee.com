@@ -26,7 +26,33 @@ type: page
 
 <section class='section' id='pricing'>
   <div class='container'>
-    {{< pricingtablebuttons >}}
+    <div class='row'>
+      <article class='pricing-column enterprise-contact col-xs-12'>
+        <div class='inner-box'>
+          <div class='plan-header text-center'>
+            <h3 class='plan-title'>Hast du +10 Tausend Downloads im Monat oder einen geschäftskritischen Podcast?</h3>
+            <h2 class='plan-price'>Professionelle Pakete</h2>
+          </div>
+          <div class='plan-header text-center'>
+            <a class='btn btn-default btn-shadow w-md btn-rounded' href='mailto:hello@podigee.com'>
+              Kontakt aufnehmen
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class='row'>
+      <article class='pricing-column enterprise-contact col-xs-12'>
+        <div class='inner-box'>
+          <div class='plan-header text-center'>
+            <h3 class='plan-title'>Bist du erst am Start, oder hast du einen etablierten Podcast?</h3>
+            <h2 class='plan-price'>Reguläre Pakete</h2>
+            {{< pricingtablebuttons >}}
+          </div>
+        </div>
+      </article>
+    </div>
 
     <div class='row'>
       {{< pricingcolumn name="Bedroom" price_eur_yearly="33" price_usd_yearly="44" price_eur_monthly="3" price_usd_monthly="4" >}}
@@ -124,22 +150,6 @@ type: page
           Starte jetzt deine 14 tägige Testphase!
         </a>
       </div>
-    </div>
-
-    <div class='row'>
-      <article class='pricing-column enterprise-contact col-xs-12'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Individuelle Angebote</h3>
-            <h2 class='plan-price'>Spezielle Anforderungen? Kontaktiere uns!</h2>
-          </div>
-          <div class='plan-header text-center'>
-            <a class='btn btn-default btn-shadow w-md btn-rounded' href='mailto:hello@podigee.com'>
-              Kontakt aufnehmen
-            </a>
-          </div>
-        </div>
-      </article>
     </div>
   </div>
 </section>

@@ -26,7 +26,33 @@ type: page
 
 <section class='section' id='pricing'>
   <div class='container'>
-    {{< pricingtablebuttons >}}
+    <div class='row'>
+      <article class='pricing-column enterprise-contact col-xs-12'>
+        <div class='inner-box'>
+          <div class='plan-header text-center'>
+            <h3 class='plan-title'>Got +10k downloads per month or mission-critical podcasts?</h3>
+            <h2 class='plan-price'>Professional Plans</h2>
+          </div>
+          <div class='plan-header text-center'>
+            <a class='btn btn-default btn-shadow w-md btn-rounded' href='mailto:hello@podigee.com'>
+              Click to get in touch
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class='row'>
+      <article class='pricing-column enterprise-contact col-xs-12'>
+        <div class='inner-box'>
+          <div class='plan-header text-center'>
+            <h3 class='plan-title'>Just getting started, or have an established show?</h3>
+            <h2 class='plan-price'>Regular Plans</h2>
+            {{< pricingtablebuttons >}}
+          </div>
+        </div>
+      </article>
+    </div>
 
     <div class='row'>
       {{< pricingcolumn name="Bedroom" price_eur_yearly="33" price_usd_yearly="44" price_eur_monthly="3" price_usd_monthly="4" >}}
@@ -56,7 +82,7 @@ type: page
           Custom web player themes
         </li>
         <li>
-          <a href="/en/features/automatic-transcription/" title="Podigee automatic podcast transcription">Automated transcripts</a> <br><small>($0.12/0,10€ per minute)</small>
+          <a href="/en/features/automatic-transcription/" title="Podigee automatic podcast transcription">Automated transcripts</a> <br><small>($0.24/0,20€ per minute)</small>
         </li>
         <li>
           Multitrack upload
@@ -123,21 +149,6 @@ type: page
           Start your 14 day trial now!
         </a>
       </div>
-    </div>
-    <div class='row'>
-      <article class='pricing-column enterprise-contact col-xs-12'>
-        <div class='inner-box'>
-          <div class='plan-header text-center'>
-            <h3 class='plan-title'>Custom plans</h3>
-            <h2 class='plan-price'>Special requirements? We've got you covered!</h2>
-          </div>
-          <div class='plan-header text-center'>
-            <a class='btn btn-default btn-shadow w-md btn-rounded' href='mailto:hello@podigee.com'>
-              Click to learn more
-            </a>
-          </div>
-        </div>
-      </article>
     </div>
   </div>
 </section>
