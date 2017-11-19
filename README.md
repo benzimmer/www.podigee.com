@@ -5,7 +5,19 @@
 - [hugo static site generator](https://gohugo.io)
 - [brunch asset compilation](https://brunch.io)
 
+You'll need:
+
+- npm
+- brunch
+- yarn
+
 ## Writing / Development
+
+First time, run:
+
+```
+npm install
+```
 
 Start hugo and brunch
 ```
