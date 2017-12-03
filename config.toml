@@ -1,19 +1,19 @@
 DefaultContentLanguage = "en"
-baseURL = "https://www2.podigee.com/"
+baseURL = "https://www.podigee.com/"
 defaultContentLanguageInSubdir = true
 metaDataFormat = "yaml"
 theme = "podigee"
 [Languages.de]
-title = "Podigee Podcast Hosting"
+title = "Podcast-Hosting Dienst Podigee"
 login_link = "https://app.podigee.com/de/login"
 register_link = "https://app.podigee.com/de/register"
 [Languages.en]
-title = "Podigee Podcast Hosting"
+title = "Podcast Hosting Service Podigee"
 login_link = "https://app.podigee.com/en/login"
 register_link = "https://app.podigee.com/en/register"
 [params]
 analytics_key = "gBLJbe7dK7pkedcxKH2WM0yilNDxCZPN"
 authors = "Podigee"
 description = "Podigee is a great hosting solution for your podcasts. We offer world-class human support and statistics."
-keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "transcripts", "podcasting", "webplayer", "podcast hosting", "podcast hosting deutschland", "podcast hosting deutsch", "podcasts"]
-page_title = "Podigee Podcast Hosting"
+keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "transcripts", "podcasting", "webplayer", "podcast hosting", "podcast hosting deutschland", "podcast hosting deutsch", "podcasts", "podcast hoster"]
+page_title = "Podcast Hosting Service Podigee"
