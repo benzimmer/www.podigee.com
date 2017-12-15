@@ -33,7 +33,7 @@
     <meta content='{{ $.Param "description" }}' property='og:description'>
     <meta content='website' property='og:type'>
     <meta content='{{ .URL | absLangURL }}' property='og:url'>
-    <meta content='{{ "/images/podigee-logo-with-claim.png" | absLangURL }}' property='og:image'>
+    <meta content='{{ ($.Param "image" | default "/images/podigee.png") | absURL }}' property='og:image'>
     <meta content='Podigee' property='og:site_name'>
     <meta content='https://www.facebook.com/podigee' property='article:publisher'>
 
@@ -42,11 +42,11 @@
     <meta content='{{ .URL | absLangURL }}' name='twitter:url'>
     <meta content='{{ $.Param "page_title" }}' name='twitter:title'>
     <meta content='{{ $.Param "description" }}' name='twitter:description'>
-    <meta content='{{ "/images/podigee-logo-with-claim.png" | absLangURL }}' name='twitter:image'>
+    <meta content='{{ ($.Param "image" | default "/images/podigee.png") | absURL }}' name='twitter:image'>
 
     <meta content='{{ $.Param "page_title" }}' itemprop='name'>
     <meta content='{{ $.Param "description" }}' itemprop='description'>
-    <meta content='{{ "/images/podigee-logo-with-claim.png" | absLangURL }}' itemprop='image'>
+    <meta content='{{ ($.Param "image" | default "/images/podigee.png") | absURL }}' itemprop='image'>
 
     <link rel="stylesheet" media="screen" href="/css/app.css">
     {{ $brand := (index .Site.Data.brands ($.Param "brand" | default "hosting")) }}
