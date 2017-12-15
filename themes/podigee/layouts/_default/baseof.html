@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Lang }}">
   <head>
     <meta charset="utf-8">
     <title>{{ $.Param "title" }} - Podigee Podcast Hosting</title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta http-equiv='content-language' content='{{ .Lang }}'>
 
     <meta content='{{ $.Param "description" }}' name='description'>
     <meta content='{{ $.Param "authors" }}' name='author'>
