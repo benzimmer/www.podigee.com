@@ -18,7 +18,14 @@
               <time>
                 {{ i18n "published_on" }} {{ .Date.Format "2006-01-02" }}
                 {{ $author := (index .Site.Data.authors .Params.author) }}
-                {{ i18n "published_by" }} <a href="mailto:{{ $author.email }}">{{ $author.name }}</a>
+
+                {{ i18n "published_by" }}
+                {{ if $author.email }}
+                  <a href="mailto:{{ $author.email }}">{{ $author.name }}</a>
+                {{ end }}
+                {{ if $author.twitter }}
+                  <a href="https://twitter.com/{{ $author.twitter }}">{{ $author.name }}</a>
+                {{ end }}
               </div>
             </div>
           </div>

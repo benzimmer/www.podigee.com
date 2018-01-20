@@ -41,7 +41,12 @@
                       </a>
                       <div class='meta'>
                         {{ $author := (index .Site.Data.authors .Params.author) }}
-                        by: <a href="mailto:{{ $author.email }}">{{ $author.name }}</a>
+                        {{ if $author.email }}
+                          by: <a href="mailto:{{ $author.email }}">{{ $author.name }}</a>
+                        {{ end }}
+                        {{ if $author.twitter }}
+                          by: <a href="https://twitter.com/{{ $author.twitter }}">{{ $author.name }}</a>
+                        {{ end }}
                       </div>
                     </div>
                   </div>
