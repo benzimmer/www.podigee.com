@@ -53,12 +53,12 @@
 - id: per_year
   translation: pro Jahr und spare einen Monat
 - id: prices_in_usd
-  translation: Preise in US $
+  translation: Preise in US $ anzeigen
 - id: prices_in_eur
-  translation: Preise in €
+  translation: Preise in € anzeigen
 - id: pay_yearly
   translation: Spare mit jährlicher Zahlung
 - id: pay_monthly
   translation: Monatliche Zahlung
 - id: popular_plan
-  translation: Unser beliebtestes Paket
+  translation: Unser beliebtestes Paket!
