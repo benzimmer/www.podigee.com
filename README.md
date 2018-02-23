@@ -7,9 +7,10 @@
 
 You'll need:
 
-- npm
-- brunch
-- yarn
+- npm (brew install npm)
+- brunch (sudo npm install -g brunch)
+- yarn (brew install yarn)
+- hugo (brew install hugo)
 
 ## Writing / Development
 
