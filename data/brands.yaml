@@ -10,14 +10,16 @@ hosting:
     href: "/plans/"
   - title: features
     href: "/features/"
-  - title: pro_services
-    href: "/pro-services/"
+  - title: premium
+    href: "/premium/"
   - title: blog
     href: "/blog/"
   - title: more
     navigation:
     - title: podcast_player
       href: "/podcast-player/"
+    - title: pro_services
+      href: "/pro-services/"
     - divider: true
     - title: help
       href: http://docs.podigee.com
@@ -25,3 +27,7 @@ player:
   color: yellow
   name: Podcast Player
   homelink: "/podcast-player/"
+premium:
+  color: green
+  name: Podigee Premium
+  homelink: "/premium/"
