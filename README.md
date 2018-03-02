@@ -1,5 +1,11 @@
 # www.podigee.com - Our marketing site
 
+## Updating automatic content
+
+Podcasts:
+
+- add new feeds to `./scripts/get_podcast_data.rb` and run it :)
+
 ## Used software
 
 - [hugo static site generator](https://gohugo.io)
