@@ -30,4 +30,4 @@ player:
 premium:
   color: green
   name: Podigee Premium
-  homelink: "/premium/"
+  homelink: "/"
