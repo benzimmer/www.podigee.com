@@ -6,6 +6,8 @@
   translation: Features
 - id: automatic_transcription
   translation: Automatische Transkription
+- id: premium
+  translation: Monetarisierung
 - id: pro_services
   translation: Pro Services
 - id: blog
