@@ -5,15 +5,18 @@ metaDataFormat = "yaml"
 theme = "podigee"
 [Languages.de]
 title = "Podcast-Hosting Dienst Podigee"
+page_title = "Podcast-Hosting Dienst Podigee"
 login_link = "https://app.podigee.com/de/login"
 register_link = "https://app.podigee.com/de/register"
+description = "Podigee ist eine großartige Hosting-Lösung für deine Podcasts. Wir bieten weltklasse Support, Statistiken und integrierte Monetarisierung."
+keywords = ["podcast", "hosting", "podigee", "transkription", "transkripte", "podcasting", "webplayer", "podcast hosting", "podcast hosting deutschland", "podcast hosting europa", "podcast hosting deutsch", "podcasts", "podcast hoster", "podcast monetarisieren"]
 [Languages.en]
 title = "Podcast Hosting Service Podigee"
+page_title = "Podcast Hosting Service Podigee"
 login_link = "https://app.podigee.com/en/login"
 register_link = "https://app.podigee.com/en/register"
+description = "Podigee is a great hosting solution for your podcasts. We offer world-class human support, statistics and built-in monetization."
+keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "transcripts", "podcasting", "webplayer", "podcast hosting", "podcast hosting europe", "podcast hosting", "podcasts", "podcast host", "podcast monetization"]
 [params]
 analytics_key = "gBLJbe7dK7pkedcxKH2WM0yilNDxCZPN"
 authors = "Podigee"
-description = "Podigee is a great hosting solution for your podcasts. We offer world-class human support and statistics."
-keywords = ["podcast", "hosting", "publishing", "podigee", "transcription", "transcripts", "podcasting", "webplayer", "podcast hosting", "podcast hosting deutschland", "podcast hosting deutsch", "podcasts", "podcast hoster"]
-page_title = "Podcast Hosting Service Podigee"
