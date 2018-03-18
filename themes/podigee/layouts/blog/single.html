@@ -8,7 +8,10 @@
             <p class='lead animated fadeInDown wow animated' data-wow-delay='.3s' style='visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;'>
               {{ .Params.summary|safeHTML }}
             </p>
-            <img class="img-responsive center-block m-b-30" src="{{ .Params.image }}" alt="{{ .Title }}" />
+            {{ if .Params.hideImageOnTop }}
+            {{ else }}
+              <img class="img-responsive center-block m-b-30" src="{{ .Params.image }}" alt="{{ .Title }}" />
+            {{ end }}
             <div class='blog-text m-t-30'>
               {{ .Content }}
             </div>
