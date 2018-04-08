@@ -28,6 +28,8 @@
   translation: Register
 - id: read_more
   translation: read more...
+- id: podigee_blog
+  translation: The Podigee Blog
 - id: subscribe_newsletter_title
   translation: Subscribe to our newsletter
 - id: subscribe_newsletter_text

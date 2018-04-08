@@ -1,16 +1,13 @@
 {{ define "main" }}
-  <section class='home bg-img-1' id='home' style='background: url(/blog/podigee-blog-banner.jpg) center; background-size: cover;'>
+  <section class='home bg-img-1' id='home' style='background: url(/blog/podigee-blog-banner-w.jpg) center; background-size: cover; height: 400px'>
     <div class='bg-overlay'></div>
     <div class='container'>
       <div class='row'>
         <div class='col-sm-12'>
           <div class='home-wrapper text-center'>
             <h2 class='animated fadeInDown wow text-white' data-wow-delay='.1s'>
-              The Podigee Blog
+              {{ i18n "podigee_blog" }}
             </h2>
-            <p class='animated fadeInDown wow text-light' data-wow-delay='.2s'>
-            News from the broadcast tower
-            </p>
           </div>
         </div>
       </div>
