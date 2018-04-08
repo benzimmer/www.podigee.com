@@ -1,6 +1,6 @@
 ---
 hosting:
-  color: blue
+  color: yellow
   name: Podcast Hosting
   homelink: "/"
   navigation:
@@ -24,7 +24,7 @@ hosting:
     - title: help
       href: http://docs.podigee.com
 player:
-  color: yellow
+  color: blue
   name: Podcast Player
   homelink: "/podcast-player/"
 premium:
