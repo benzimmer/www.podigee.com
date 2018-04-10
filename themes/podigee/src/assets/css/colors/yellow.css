@@ -8,18 +8,18 @@
 
 .title-box .border,.btn-primary,.back-to-top,
 .logo i,.question-q-box,.social-circle li a:hover {
-  background-color: #ffaa00 !important;
+  background-color: #fa4600 !important;
 }
 .title-box .title-alt,.text-colored,.footer a:hover,
 .navbar-custom .navbar-nav li a:hover,
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active,
 .navbar-custom .navbar-nav li.active a {
-  color: #ffaa00 !important;
+  color: #fa4600 !important;
 }
 
 .btn-primary {
-  border: 1px solid #ffaa00 !important;
+  border: 1px solid #fa4600 !important;
 }
 .btn-primary:hover,
 .btn-primary:focus,
