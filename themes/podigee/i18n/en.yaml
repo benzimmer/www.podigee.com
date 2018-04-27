@@ -66,3 +66,15 @@
   translation: Pay monthly
 - id: popular_plan
   translation: Our most popular plan
+- id: help_and_support
+  translation: Help and Support
+- id: terms_and_conditions
+  translation: Terms and Conditions
+- id: privacy_policy
+  translation: Privacy Policy
+- id: imprint
+  translation: Imprint
+- id: instagram_profile
+  translation: podigee
+- id: twitter_profile
+  translation: podigee

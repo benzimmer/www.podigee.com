@@ -66,3 +66,15 @@
   translation: Monatliche Zahlung
 - id: popular_plan
   translation: Unser beliebtestes Paket!
+- id: help_and_support
+  translation: Hilfe und Technischer Support
+- id: terms_and_conditions
+  translation: AGBs
+- id: privacy_policy
+  translation: Datenschutzerklärung
+- id: imprint
+  translation: Impressum
+- id: instagram_profile
+  translation: podigee_de
+- id: twitter_profile
+  translation: podigee_de

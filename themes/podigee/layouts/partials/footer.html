@@ -17,13 +17,13 @@
               </a>
             </li>
             <li>
-              <a href='https://www.twitter.com/podigee'>
+              <a href='https://www.twitter.com/{{ i18n "twitter_profile" }}'>
                 <i class='zmdi zmdi-twitter'></i>
               </a>
             </li>
             <li>
-              <a href='https://plus.google.com/+Podigee'>
-                <i class='zmdi zmdi-google-plus'></i>
+              <a href='https://www.instagram.com/{{ i18n "instagram_profile" }}'>
+                <i class='zmdi zmdi-instagram'></i>
               </a>
             </li>
             <li>
@@ -35,16 +35,16 @@
           <div>hello@podigee.com</div>
           <ul class='list-inline menu-list m-t-30'>
             <li>
-              <a href='mailto:hello@podigee.com'>Help and Support</a>
+              <a href='mailto:hello@podigee.com'>{{ i18n "help_and_support" }}</a>
             </li>
             <li>
-              <a href='{{ .RelRef "about/tos.en.html" }}'>Terms and Conditions</a>
+              <a href='{{ .RelRef "about/tos.en.html" }}'>{{ i18n "terms_and_conditions" }}</a>
             </li>
             <li>
-              <a href='{{ .RelRef "about/privacy.en.html" }}'>Privacy Policy</a>
+              <a href='{{ .RelRef "about/privacy.en.html" }}'>{{ i18n "privacy_policy" }}</a>
             </li>
             <li>
-              <a href='{{ .RelRef "about/imprint.en.html" }}'>Imprint</a>
+              <a href='{{ .RelRef "about/imprint.en.html" }}'>{{ i18n "imprint" }}</a>
             </li>
           </ul>
           <p class='text-muted m-b-0'>© Podigee 2013-{{ now.Year }} All Rights Reserved</p>
