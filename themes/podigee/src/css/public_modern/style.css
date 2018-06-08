@@ -9,7 +9,7 @@
 
 /*======= Reset ======== */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   color: #4c5667;
   background: #fff;
   font-size: 16px;
@@ -30,7 +30,7 @@ a:hover,a:focus,.a:active {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 address {
@@ -439,7 +439,7 @@ address {
   color: #858585;
   font-size: 15px;
   margin: 5px 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .navbar-custom .nav>li>a:focus,.navbar-custom .nav>li>a:hover {
@@ -462,7 +462,7 @@ address {
   color: #374760 !important;
   letter-spacing: 1px;
   padding-top: 12px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .logo i{
@@ -696,7 +696,7 @@ address {
 .question-q-box {
   height: 30px;
   width: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: #ffffff;
   text-align: center;
   border-radius: 3px;
