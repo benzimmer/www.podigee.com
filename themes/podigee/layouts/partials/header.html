@@ -31,13 +31,14 @@
                     <li class='divider' role='separator'></li>
                   {{ else }}
                     <li>
-                      <a href='{{ .href | relLangURL }}'>{{ i18n .title }}</a>
+                      {{ if .href }}
+                        <a href='{{ .href | relLangURL }}'>{{ i18n .title }}</a>
+                      {{ else }}
+                        <a href='{{ i18n .absHref }}'>{{ i18n .title }}</a>
+                      {{ end }}
                     </li>
                   {{ end }}
                 {{ end }}
-                <li>
-                  <a href='/en/changelog'>{{ i18n "changelog" }}</a>
-                </li>
               </ul>
             </li>
           {{ end }}

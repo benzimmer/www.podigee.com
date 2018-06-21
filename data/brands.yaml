@@ -22,7 +22,7 @@ hosting:
       href: "/pro-services/"
     - divider: true
     - title: help
-      href: http://docs.podigee.com
+      absHref: "https://help.podigee.com"
 player:
   color: blue
   name: Podcast Player
