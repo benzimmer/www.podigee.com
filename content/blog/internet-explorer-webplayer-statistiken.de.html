@@ -1,0 +1,61 @@
+---
+title: Internet Explorer Web-Player Statistiken
+keywords:
+- webplayer
+- statistiken
+- internet explorer
+- bug
+description: Durch einen Bug im Internet Explorer wurden Download Zahlen verfälscht.
+date: '2018-06-26T00:00:00Z'
+image: "/blog/pexels-photo-1.jpg"
+summary: Durch einen Bug im Internet Explorer wurden Download Zahlen verfälscht.
+author: juergen
+
+---
+<div class="blog-detail-box">
+  <p>
+    Hallo zusammen.
+  </p>
+
+  <p>
+    Wir halten sehr wenig davon, schlechte Nachrichten mit Zuckerguss zu garnieren und durch die Blume zu übermitteln, deshalb rücken wir auch direkt mit der Sprache raus: Ein Bug im Internet Explorer hat dazu geführt, dass eure Podcast-Abrufzahlen höher ausfielen, als sie tatsächlich waren. Wir haben das Problem auf unserer Seite Ende letzter Woche behoben, wollen euch aber gerne etwas detaillierter erklären, was da genau schief gelaufen ist.
+  </p>
+
+  <h3>Das Problem en détail</h3>
+  <p>
+    Einigen von euch ist vielleicht schon aufgefallen, dass seit vergangenem Freitag die Zugriffszahlen auf euren Podcast etwas zurückgegangen sind. Das ist besonders dann der Fall, wenn viele eurer Hörer und Webseitenbesucher mit dem Internet Explorer Seiten von euch aufgerufen haben, in denen unser Webplayer eingebunden war. Der Fehler lag jedoch nicht direkt in unserem Webplayer, sondern in Microsofts Browser: Der hat nämlich munter Audio-Dateien heruntergeladen, obwohl noch gar niemand auf „Play“ gedrückt hatte – wobei wir ihm <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/audio" target="_blank">gemäß der Spezifikation</a> explizit mitgeteilt hatten, dies zu unterlassen.
+  </p>
+
+  <p>
+    Das ist insofern natürlich extrem ärgerlich, weil dadurch eure Statistiken verfälscht wurden – und es jetzt, wo wir den Fehler korrigiert haben, es so aussieht, als wären euch die Hörer davongelaufen.
+  </p>
+
+  <h3>Achtung, Technik-Alarm!</h3>
+  <p>
+    Den Technik-Fans unter euch erklären wir auch gerne noch etwas genauer, was da schief gelaufen ist: Der Standard-HTML-5-Audioplayer überlässt es dem Browser, ob und wie viel der Audiodatei er im Hintergrund vorauslädt. Unser Webplayer setzt jedoch das <code>preload</code>-Attribut auf den Wert <code>none</code>, um genau das zu unterbinden. Auf Deutsch: Die Audio-Datei soll nicht direkt beim Seitenaufruf übertragen werden, sondern erst, wenn jemand auch tatsächlich auf Wiedergabe drückt. Auf diesem Wege werden Abrufe auch erst erfasst, wenn wirklich Audio geladen und abgespielt wird. In HTML ausgedrückt, sieht das Ganze etwa so aus:
+  </p>
+
+  <pre>&lt;audio src=&quot;https://cdn.podigee.com/audio.mp3&quot; preload=&quot;none&quot;&gt;</pre>
+
+  <p>
+    Damit kommen fast alle Browser klar – aber eben nur fast alle: <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8982801/" target="_blank">Der Internet Explorer ignoriert den Inhalt des preload-Attributs</a> und lädt stumpf bei jedem Seitenaufruf die Datei audio.mp3 herunter. Das macht er aber nicht immer, sonst wäre uns das ziemlich sicher in unserer virtuellen Entwicklungsumgebung bereits aufgefallen. Nein, der eigenwillige Browser prescht hier anscheinend nur vor, wenn ausreichend Bandbreite vorhanden ist – was in unseren virtuellen Maschinen nicht der Fall zu sein scheint. 
+  </p>
+
+  <p>
+    <strong>[Unsere Lösung™]</strong> Wir haben sofort, als wir das bemerkt haben, einen Fix ausgeliefert, den auch der Internet Explorer versteht: Wir lassen künftig einfach das <code>src</code>-Attribut leer, sodass der Browser gar keine Chance hat, irgendetwas vorauszuladen. Erst wenn der Besucher auf Wiedergabe drückt, wird dynamisch die passende URL eingesetzt und die Audio-Datei aufgerufen. Der Hörer merkt keinen Unterschied – und eure Statistiken stimmen wieder. 
+  </p>
+
+  <h3>Technik-Alarm Ende!</h3>
+  <p>
+    Ihr dürft uns gerne glauben: Die Sache ärgert uns enorm! Dabei tröstet es nur wenig, dass auch viele andere, die Audio über einen Webplayer anbieten, ähnliche Probleme hatten – und in vielen Fällen womöglich sogar noch haben. Unser Anspruch ist es, besser zu sein und unseren Kunden Service zu bieten, den sie so sonst nirgends finden. Für uns gehören dazu aber auch Transparenz und Ehrlichkeit – und deshalb gestehen wir uns und euch hier einen Fehler ein, den wir vielleicht nicht gemacht haben, aber für den wir uns trotzdem verantwortlich fühlen.
+  </p>
+
+  <p>
+    Deshalb bleibt uns an dieser Stelle nur, ein <strong>dickes fettes Sorry</strong> in eure Richtung zu schicken! Meldet euch gerne bei uns, falls ihr dazu noch irgendwelche Fragen habt!
+  </p>
+
+  <p>
+    Ben und Mati
+  </p>
+</div>
+
