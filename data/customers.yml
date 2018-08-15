@@ -1,0 +1,47 @@
+---
+customers:
+- name: Zeit Online
+  url: http://www.zeit.de/
+  shortname: zeit
+- name: Axel Springer
+  url: https://www.axelspringer.com/de
+  shortname: axel-springer
+- name: Deutsche Telekom
+  url: https://www.telekom.de/
+  shortname: deutsche-telekom
+- name: Süddeutsche Zeitung
+  url: https://www.sueddeutsche.de/
+  shortname: sueddeutsche
+- name: Frankfurter Allgemeine Zeitung
+  url: https://www.faz.net/
+  shortname: faz
+- name: Tagesspiegel
+  url: https://www.tagesspiegel.de
+  shortname: tagesspiegel
+- name: Hubert Burda Media
+  url: https://www.burda.com/
+  shortname: burda
+- name: Gruner + Jahr
+  url: https://www.guj.de/
+  shortname: gruner-jahr
+- name: Handelsblatt
+  url: https://www.handelsblatt.com
+  shortname: handelsblatt
+- name: Die Welt
+  url: https://www.welt.de/
+  shortname: welt
+- name: Zebra Audio Net
+  url: https://zebralution.com/de/
+  shortname: zebra
+- name: ams Radio und MediaSolutions
+  url: https://www.ams-net.de
+  shortname: ams
+- name: Argon Verlag
+  url: https://www.argon-verlag.de
+  shortname: argon
+- name: Deezer
+  url: https://www.deezer.com/de/
+  shortname: deezer
+- name: Hannover Rück
+  url: https://www.hannover-rueck.de/
+  shortname: hannover-re
